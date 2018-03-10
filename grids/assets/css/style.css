@@ -1,0 +1,90 @@
+/* Header/ Navbar */
+
+/* .header {
+
+} */
+.nav-bar {
+  margin-top: 0;
+  display: flex;
+  /* width is fucked atm */
+  width: 79.8vw;
+  position: fixed;
+  background: skyblue;
+
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.profile-pic {
+  /* margin-left: auto; */
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+/* extra styling */
+.nav-bar {
+  height: 50px;
+  align-items: center;
+  border: 1px solid green;
+
+}
+
+.nav-bar li:not(.profile-pic){
+  margin-right: 10px;
+  margin-left: 10px;
+  /* padding: 0 10px; */
+}
+
+ul > li > a:hover {
+  color: indianred;
+}
+
+body {
+  width: 80vw;
+  margin: auto;
+}
+main {
+  /* to compensate navbar */
+  /* padding-top: 50px;  */
+  /* scroll-behavior: smooth;  */
+  /* overflow-y: scroll; */
+}
+
+.main-grid {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 100vh 100vh 100vh;
+  grid-template-areas: 
+    "g g g g a a a a a a a a"
+    "p p p p p p p p p p p p"
+    "c c c c c c c c c c c c"
+}
+
+section#gif {
+  grid-area: g;
+  background: purple;
+}
+
+section#about {
+  grid-area: a;
+  background: dodgerblue;
+}
+
+section#projects {
+  grid-area: p;
+  background: crimson;
+}
+
+section#contact {
+  grid-area: c;
+  background: pink;
+}
+
+footer {
+  text-align: center;
+  background: blanchedalmond;
+}
