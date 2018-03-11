@@ -11,12 +11,14 @@
   width: 80vw;
   margin: auto; }
 
+/* NAVBAR
+   ============================================================ */
 .nav-bar {
   display: flex;
   width: 80vw;
   position: fixed;
   background: skyblue;
-  height: 50px;
+  height: 10vh;
   align-items: center;
   /* border: 1px solid green; */
   list-style: none; }
@@ -30,9 +32,11 @@
     .nav-bar li:not(.profile-pic) a:hover {
       color: indianred; }
 
+/* PAGES
+   ============================================================ */
 section {
-  height: 100vh;
-  padding-top: 50px; }
+  height: 90vh;
+  padding-top: 10vh; }
 
 section#about {
   background: dodgerblue;
@@ -51,9 +55,27 @@ section#projects {
     width: 50%; }
 
 section#contact {
-  background: pink; }
+  background: pink;
+  height: 80vh; }
+  section#contact form {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column; }
+    section#contact form input, section#contact form textarea {
+      border: solid 1px grey;
+      box-sizing: border-box;
+      transition: all 0.3s ease-in-out; }
+    section#contact form input:hover, section#contact form textarea:hover {
+      background: wheat;
+      color: white; }
+    section#contact form textarea {
+      height: 100px; }
+    section#contact form input#contact-submit {
+      cursor: pointer; }
 
 footer {
+  height: 10vh;
   text-align: center;
   background: blanchedalmond; }
 

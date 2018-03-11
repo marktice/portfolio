@@ -12,12 +12,14 @@
   margin: auto;
 }
 
+/* NAVBAR
+   ============================================================ */
 .nav-bar {
   display: flex;
   width: 80vw;
   position: fixed;
   background: skyblue;
-  height: 50px;
+  height: 10vh;
   align-items: center;
   /* border: 1px solid green; */
   list-style: none;
@@ -35,10 +37,11 @@
   }
 }
 
-
+/* PAGES
+   ============================================================ */
 section {
-  height: 100vh;
-  padding-top: 50px;
+  height: 90vh;
+  padding-top: 10vh;
 }
 
 section#about {
@@ -65,9 +68,34 @@ section#projects {
 
 section#contact {
   background: pink;
+  height: 80vh;
+  form {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    input, textarea {
+      border: solid 1px grey;
+      box-sizing: border-box;
+      transition: all 0.3s ease-in-out;
+    }
+    input:hover, textarea:hover {
+      background: wheat;
+      color: white;
+    }
+
+    textarea {
+      height: 100px;    
+    }
+
+    input#contact-submit {
+      cursor: pointer;
+    }
+  }
 }
 
 footer {
+  height: 10vh;
   text-align: center;
   background: blanchedalmond;
 }
