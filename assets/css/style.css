@@ -1,7 +1,11 @@
+
+body {
+  width: 80vw;
+  margin: auto;
+}
+
 /* Header/ Navbar */
-
 /* .header {
-
 } */
 .nav-bar {
   margin-top: 0;
@@ -10,7 +14,6 @@
   width: 79.8vw;
   position: fixed;
   background: skyblue;
-
 }
 
 ul {
@@ -31,21 +34,16 @@ ul {
   border: 1px solid green;
 
 }
-
 .nav-bar li:not(.profile-pic){
   margin-right: 10px;
   margin-left: 10px;
   /* padding: 0 10px; */
 }
-
 ul > li > a:hover {
   color: indianred;
 }
 
-body {
-  width: 80vw;
-  margin: auto;
-}
+
 main {
   /* to compensate navbar */
   /* padding-top: 50px;  */
