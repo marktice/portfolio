@@ -5,6 +5,7 @@
 :root {
   scroll-behavior: smooth; 
   overflow-y: scroll;
+  background: rgb(255, 250, 241);
 }
 
 #page-wrapper {
@@ -12,18 +13,13 @@
   margin: auto;
 }
 
-/* Header/ Navbar */
-/* .header {
-} */
+/* NAVBAR */
 .nav-bar {
-  margin-top: 0;
   display: flex;
   width: 80vw;
   position: fixed;
-  background: skyblue;
 }
 ul {
-  padding: 0;
   list-style: none;
 }
 .profile-pic {
@@ -32,8 +28,9 @@ ul {
   margin-right: auto;
 }
 
-/* extra styling */
+/* NAVBAR styling */
 .nav-bar {
+  background: skyblue;
   height: 50px;
   align-items: center;
   /* border: 1px solid green; */
@@ -46,39 +43,35 @@ ul > li > a:hover {
   color: indianred;
 }
 
-/* main {
-} */
-
-/* .main-grid {
-  display: grid;
-  grid-gap: 3px;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 100vh 100vh 100vh;
-  grid-template-areas: 
-    "g g g g a a a a a a a a"
-    "p p p p p p p p p p p p"
-    "c c c c c c c c c c c c"
-} */
 
 section {
   height: 100vh;
   padding-top: 50px;
 }
 
-section#gif {
-  grid-area: g;
-  background: purple;
-}
 section#about {
-  grid-area: a;
   background: dodgerblue;
+  display: flex;
 }
+#about-portrait {
+  width: 50%;
+}
+#about-content {
+  width: 50%;
+}
+
 section#projects {
-  grid-area: p;
   background: crimson;
+  display: flex;
 }
+#projects-content {
+  width: 50%;
+}
+#projects-gallery {
+  width: 50%;
+}
+
 section#contact {
-  grid-area: c;
   background: pink;
 }
 
