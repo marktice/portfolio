@@ -12,7 +12,7 @@
   margin: auto; }
 
 /* NAVBAR
-   ============================================================ */
+   ============================================== */
 .nav-bar {
   display: flex;
   width: 80vw;
@@ -33,14 +33,15 @@
       color: indianred; }
 
 /* PAGES
-   ============================================================ */
+   ============================================== */
 section {
   height: 90vh;
   padding-top: 10vh; }
 
 section#about {
   background: dodgerblue;
-  display: flex; }
+  display: flex;
+  align-items: center; }
   section#about #about-portrait {
     width: 50%; }
   section#about #about-content {
@@ -59,7 +60,7 @@ section#contact {
   height: 80vh; }
   section#contact form {
     width: 50%;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column; }
     section#contact form input, section#contact form textarea {
@@ -70,13 +71,16 @@ section#contact {
       background: wheat;
       color: white; }
     section#contact form textarea {
-      height: 100px; }
+      height: 100px;
+      resize: none; }
     section#contact form input#contact-submit {
       cursor: pointer; }
 
 footer {
   height: 10vh;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background: blanchedalmond; }
 
 /*# sourceMappingURL=style.css.map */

@@ -13,7 +13,7 @@
 }
 
 /* NAVBAR
-   ============================================================ */
+   ============================================== */
 .nav-bar {
   display: flex;
   width: 80vw;
@@ -38,7 +38,7 @@
 }
 
 /* PAGES
-   ============================================================ */
+   ============================================== */
 section {
   height: 90vh;
   padding-top: 10vh;
@@ -47,6 +47,7 @@ section {
 section#about {
   background: dodgerblue;
   display: flex;
+  align-items: center;
   #about-portrait {
     width: 50%;
   }
@@ -69,9 +70,10 @@ section#projects {
 section#contact {
   background: pink;
   height: 80vh;
+
   form {
     width: 50%;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     input, textarea {
@@ -85,7 +87,8 @@ section#contact {
     }
 
     textarea {
-      height: 100px;    
+      height: 100px;
+      resize: none;
     }
 
     input#contact-submit {
@@ -96,6 +99,8 @@ section#contact {
 
 footer {
   height: 10vh;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background: blanchedalmond;
 }
