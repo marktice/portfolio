@@ -4,9 +4,7 @@ html {
   overflow-y: scroll;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   box-sizing: inherit;
 }
 
@@ -25,8 +23,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #page-wrapper {
-  width: 97%;
-  max-width: 1200px;
   margin: 0 auto;
   background-color: #fff;
 }
@@ -34,8 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 /* NAVBAR
   ============================================== */
 .nav-bar {
-  width: 97%;
-  max-width: 1200px;
+  width: 100%;
   display: flex;
   position: fixed;
   background-color: #998099;
@@ -63,56 +58,48 @@ h1, h2, h3, h4, h5, h6 {
    ============================================== */
 main section {
   height: 100vh;
-  padding-top: 10vh;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 15vh;
+}
+
+main .col {
+  flex-basis: 92%;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 main section#about {
   background-color: #699;
   display: flex;
-  align-items: center;
-}
-
-main section#about #about-portrait {
-  width: 50%;
-}
-
-main section#about #about-content {
-  width: 50%;
+  align-items: flex-start;
 }
 
 main section#projects {
   background-color: #c69;
   display: flex;
-}
-
-main section#projects #projects-content {
-  width: 50%;
-}
-
-main section#projects #projects-gallery {
-  width: 50%;
+  align-items: flex-start;
 }
 
 main section#contact {
   background-color: #699;
   height: 80vh;
+  padding-top: 5vh;
+  display: flex;
+  align-items: flex-start;
 }
 
 main section#contact form {
-  width: 50%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
-main section#contact form input,
-main section#contact form textarea {
+main section#contact form input, main section#contact form textarea {
   border: solid 1px #998099;
   transition: all 0.3s ease-in-out;
 }
 
-main section#contact form input:hover,
-main section#contact form textarea:hover {
+main section#contact form input:hover, main section#contact form textarea:hover {
   background-color: #c69;
   color: #fff;
 }

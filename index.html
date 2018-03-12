@@ -7,7 +7,6 @@
   <title>Mark Tice</title>
   <link rel="stylesheet" href="/assets/stylesheets/style.css">
 </head>
-
 <body>
   <div id="page-wrapper">
     <header id="top">
@@ -23,11 +22,10 @@
 
     <main>
       <section id="about">
-        <div id="about-portrait">
+        <div class="col" id="about-portrait">
           gif of meeeee
         </div>
-
-        <div id="about-content">
+        <div class="col" id="about-content">
           <h1>Mark Tice</h1>
           <p>blablabla i am so great Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aspernatur beatae consequuntur sequi inventore iusto tempora amet cum voluptate aliquid.</p>
           <p>coding skills: html, css, ruby, javascript</p>
@@ -36,24 +34,23 @@
       </section>
 
       <section id="projects">
-        <div id="projects-content">
+        <div class="col" id="projects-content">
           <h2>projects and hobbies?</h2>
           <p>description of projects</p>
         </div>
-        <div id="projects-gallary">
-          gallery img grid
+        <div class="col" id="gallery">
+          <div>gallery img grid</div>
         </div>
       </section>
 
       <section id="contact">
-        <h2>Contact me</h2>
-        <form action="#about" method="get">
+        <div class="col" id="contact-content">
+          <h2>Contact me</h2>
+        </div>
+        <form class="col" action="#about" method="get">
           <input type="text" name="name" id="contact-name" placeholder="NAME">
-
           <input type="email" name="email" id="contact-email" placeholder="E-MAIL">
-
           <textarea name="message" id="contact-message" placeholder="MESSAGE"></textarea>
-
           <input type="submit" value="SEND" id="contact-submit">
         </form>
       </section>

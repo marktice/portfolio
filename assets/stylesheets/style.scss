@@ -8,11 +8,7 @@ html {
 }
 
 // inherit border-box on all elements anywhere, before and after
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+*, *:before, *:after { box-sizing: inherit; }
 
 * {
   margin: 0;
@@ -24,27 +20,19 @@ body {
   color: $text-color;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $second-font;
-}
+h1, h2, h3, h4, h5, h6 { font-family: $second-font; }
 
 #page-wrapper {
-  width: 97%;
-  max-width: 1200px;
+  // width: 100%;
+  // max-width: 1200px;
   margin: 0 auto;
   background-color: $white;
 }
-
-// targets all links which go off-site
-// [ href *= "http" ] {
-  //   background: violet;
-  // }
   
   /* NAVBAR
   ============================================== */
 .nav-bar {
-  width: 97%; //repeating it, wont take wrapper width hmmm :(
-  max-width: 1200px; //also repeating
+  width: 100%;
   display: flex;
   position: fixed;
   background-color: $venus;
@@ -69,44 +57,48 @@ h1, h2, h3, h4, h5, h6 {
 main {
   section {
     height: 100vh;
-    padding-top: 10vh;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 15vh;
+  }
+  .col {
+    flex-basis: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
   }
 
   section#about {
     background-color: $patina;
     display: flex;
-    align-items: center;
-    #about-portrait {
-      width: 50%;
-    }
-    #about-content {
-      width: 50%;
-    }
+    align-items: flex-start;
+    // #about-portrait {
+    // }
+    // #about-content {
+    // }
   }
 
   section#projects {
     background-color: $hopbush;
     display: flex;
-    #projects-content {
-      width: 50%;
-    }
-    #projects-gallery {
-      width: 50%;
-    }
+    align-items: flex-start;
+    // #projects-content {
+    // }
+    // #gallery {
+    // }
   }
 
   section#contact {
     background-color: $patina;
     height: 80vh;
-
+    padding-top: 5vh;
+    display: flex;
+    align-items: flex-start;
+    // #contact-content {
+    // }
     form {
-      width: 50%;
-      margin: 0 auto;
       display: flex;
       flex-direction: column;
-
-      input, 
-      textarea {
+      input, textarea {
         border: solid 1px $venus;
         transition: all 0.3s ease-in-out;
         &:hover {
@@ -114,12 +106,10 @@ main {
           color: $white;
         }
       }
-
       textarea {
         height: 100px;
         resize: none;
       }
-
       input#contact-submit {
         cursor: pointer;
         &:disabled { opacity: 0.5; }
@@ -135,3 +125,12 @@ footer {
   align-items: center;
   background-color: $venus;
 }
+
+// Small screen sizes
+// @media only screen and (min-width: 480px) {
+
+// }
+// Desktop screen sizes
+// @media only screen and (min-width: 768px) {
+
+// }
