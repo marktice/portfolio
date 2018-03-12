@@ -1,12 +1,16 @@
+@import '_variables';
+
 * {
   margin: 0;
   padding: 0;
 }
+ 
 :root {
   scroll-behavior: smooth; 
   overflow-y: scroll;
-  background: rgb(255, 250, 241);
+  background: $white;
 }
+
 #page-wrapper {
   width: 80vw;
   margin: auto;
@@ -18,7 +22,7 @@
   display: flex;
   width: 80vw;
   position: fixed;
-  background: skyblue;
+  background: $venus;
   height: 10vh;
   align-items: center;
   /* border: 1px solid green; */
@@ -31,68 +35,73 @@
   li:not(.profile-pic){
     margin-right: 10px;
     margin-left: 10px;
-    a:hover {
-      color: indianred;
-    }
+    a:hover { color: $hopbush; }
   }
 }
 
 /* PAGES
    ============================================== */
-section {
-  height: 90vh;
-  padding-top: 10vh;
-}
+main {
+  color: $text_color;
 
-section#about {
-  background: dodgerblue;
-  display: flex;
-  align-items: center;
-  #about-portrait {
-    width: 50%;
+  section {
+    height: 90vh;
+    padding-top: 10vh;
   }
-  #about-content {
-    width: 50%;
-  }
-}
 
-section#projects {
-  background: crimson;
-  display: flex;
-  #projects-content {
-    width: 50%;
-  }
-  #projects-gallery {
-    width: 50%;
-  }
-}
-
-section#contact {
-  background: pink;
-  height: 80vh;
-
-  form {
-    width: 50%;
-    margin: 0 auto;
+  section#about {
+    background: $patina;
     display: flex;
-    flex-direction: column;
-    input, textarea {
-      border: solid 1px grey;
-      box-sizing: border-box;
-      transition: all 0.3s ease-in-out;
+    align-items: center;
+    #about-portrait {
+      width: 50%;
     }
-    input:hover, textarea:hover {
-      background: wheat;
-      color: white;
+    #about-content {
+      width: 50%;
     }
+  }
 
-    textarea {
-      height: 100px;
-      resize: none;
+  section#projects {
+    background: $hopbush;
+    display: flex;
+    #projects-content {
+      width: 50%;
     }
+    #projects-gallery {
+      width: 50%;
+    }
+  }
 
-    input#contact-submit {
-      cursor: pointer;
+  section#contact {
+    background: $patina;
+    height: 80vh;
+
+    form {
+      width: 50%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+
+      input, 
+      textarea {
+        border: solid 1px $venus;
+        box-sizing: border-box;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background: $hopbush;
+          color: $white;
+        }
+      }
+
+      textarea {
+        height: 100px;
+        resize: none;
+      }
+
+      input#contact-submit {
+        cursor: pointer;
+        &:disabled { opacity: 0.5; }
+      }
     }
   }
 }
@@ -102,5 +111,5 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: blanchedalmond;
+  background: $venus;
 }

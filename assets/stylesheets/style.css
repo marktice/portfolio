@@ -1,15 +1,20 @@
+@charset "UTF-8";
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
+ 
 :root {
   scroll-behavior: smooth;
   overflow-y: scroll;
-  background: #fffaf1; }
+  background: #fff;
+}
 
 #page-wrapper {
   width: 80vw;
-  margin: auto; }
+  margin: auto;
+}
 
 /* NAVBAR
    ============================================== */
@@ -17,70 +22,109 @@
   display: flex;
   width: 80vw;
   position: fixed;
-  background: skyblue;
+  background: #998099;
   height: 10vh;
   align-items: center;
   /* border: 1px solid green; */
-  list-style: none; }
-  .nav-bar .profile-pic {
-    /* margin-left: auto; */
-    margin-left: 10px;
-    margin-right: auto; }
-  .nav-bar li:not(.profile-pic) {
-    margin-right: 10px;
-    margin-left: 10px; }
-    .nav-bar li:not(.profile-pic) a:hover {
-      color: indianred; }
+  list-style: none;
+}
+
+.nav-bar .profile-pic {
+  /* margin-left: auto; */
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+.nav-bar li:not(.profile-pic) {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.nav-bar li:not(.profile-pic) a:hover {
+  color: #c69;
+}
 
 /* PAGES
    ============================================== */
-section {
+main {
+  color: #444141;
+}
+
+main section {
   height: 90vh;
-  padding-top: 10vh; }
+  padding-top: 10vh;
+}
 
-section#about {
-  background: dodgerblue;
+main section#about {
+  background: #699;
   display: flex;
-  align-items: center; }
-  section#about #about-portrait {
-    width: 50%; }
-  section#about #about-content {
-    width: 50%; }
+  align-items: center;
+}
 
-section#projects {
-  background: crimson;
-  display: flex; }
-  section#projects #projects-content {
-    width: 50%; }
-  section#projects #projects-gallery {
-    width: 50%; }
+main section#about #about-portrait {
+  width: 50%;
+}
 
-section#contact {
-  background: pink;
-  height: 80vh; }
-  section#contact form {
-    width: 50%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column; }
-    section#contact form input, section#contact form textarea {
-      border: solid 1px grey;
-      box-sizing: border-box;
-      transition: all 0.3s ease-in-out; }
-    section#contact form input:hover, section#contact form textarea:hover {
-      background: wheat;
-      color: white; }
-    section#contact form textarea {
-      height: 100px;
-      resize: none; }
-    section#contact form input#contact-submit {
-      cursor: pointer; }
+main section#about #about-content {
+  width: 50%;
+}
+
+main section#projects {
+  background: #c69;
+  display: flex;
+}
+
+main section#projects #projects-content {
+  width: 50%;
+}
+
+main section#projects #projects-gallery {
+  width: 50%;
+}
+
+main section#contact {
+  background: #699;
+  height: 80vh;
+}
+
+main section#contact form {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+main section#contact form input,
+main section#contact form textarea {
+  border: solid 1px #998099;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+main section#contact form input:hover,
+main section#contact form textarea:hover {
+  background: #c69;
+  color: #fff;
+}
+
+main section#contact form textarea {
+  height: 100px;
+  resize: none;
+}
+
+main section#contact form input#contact-submit {
+  cursor: pointer;
+}
+
+main section#contact form input#contact-submit:disabled {
+  opacity: 0.5;
+}
 
 footer {
   height: 10vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: blanchedalmond; }
-
+  background: #998099;
+}
 /*# sourceMappingURL=style.css.map */
