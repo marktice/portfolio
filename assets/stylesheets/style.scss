@@ -1,34 +1,59 @@
 @import '_variables';
 
+// border-box and smooth scrolling on links
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth; 
+  overflow-y: scroll;
+}
+
+// inherit border-box on all elements anywhere, before and after
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
- 
-:root {
-  scroll-behavior: smooth; 
-  overflow-y: scroll;
-  background: $white;
+
+body {
+  font-family: $main-font;
+  color: $text-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $second-font;
 }
 
 #page-wrapper {
-  width: 80vw;
-  margin: auto;
+  width: 97%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: $white;
 }
 
-/* NAVBAR
-   ============================================== */
+// targets all links which go off-site
+// [ href *= "http" ] {
+  //   background: violet;
+  // }
+  
+  /* NAVBAR
+  ============================================== */
 .nav-bar {
+  width: 97%; //repeating it, wont take wrapper width hmmm :(
+  max-width: 1200px; //also repeating
   display: flex;
-  width: 80vw;
   position: fixed;
-  background: $venus;
+  background-color: $venus;
   height: 10vh;
   align-items: center;
-  /* border: 1px solid green; */
+  border: 1px solid $black;
   list-style: none;
   .profile-pic {
-    /* margin-left: auto; */
+    // margin-left: auto;
     margin-left: 10px;
     margin-right: auto;
   }
@@ -42,15 +67,13 @@
 /* PAGES
    ============================================== */
 main {
-  color: $text_color;
-
   section {
-    height: 90vh;
+    height: 100vh;
     padding-top: 10vh;
   }
 
   section#about {
-    background: $patina;
+    background-color: $patina;
     display: flex;
     align-items: center;
     #about-portrait {
@@ -62,7 +85,7 @@ main {
   }
 
   section#projects {
-    background: $hopbush;
+    background-color: $hopbush;
     display: flex;
     #projects-content {
       width: 50%;
@@ -73,7 +96,7 @@ main {
   }
 
   section#contact {
-    background: $patina;
+    background-color: $patina;
     height: 80vh;
 
     form {
@@ -85,10 +108,9 @@ main {
       input, 
       textarea {
         border: solid 1px $venus;
-        box-sizing: border-box;
         transition: all 0.3s ease-in-out;
         &:hover {
-          background: $hopbush;
+          background-color: $hopbush;
           color: $white;
         }
       }
@@ -111,5 +133,5 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: $venus;
+  background-color: $venus;
 }

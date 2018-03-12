@@ -1,36 +1,51 @@
-@charset "UTF-8";
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
- 
-:root {
-  scroll-behavior: smooth;
-  overflow-y: scroll;
-  background: #fff;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444141;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Times New Roman", Times, serif;
 }
 
 #page-wrapper {
-  width: 80vw;
-  margin: auto;
+  width: 97%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
 }
 
 /* NAVBAR
-   ============================================== */
+  ============================================== */
 .nav-bar {
+  width: 97%;
+  max-width: 1200px;
   display: flex;
-  width: 80vw;
   position: fixed;
-  background: #998099;
+  background-color: #998099;
   height: 10vh;
   align-items: center;
-  /* border: 1px solid green; */
+  border: 1px solid #000;
   list-style: none;
 }
 
 .nav-bar .profile-pic {
-  /* margin-left: auto; */
   margin-left: 10px;
   margin-right: auto;
 }
@@ -46,17 +61,13 @@
 
 /* PAGES
    ============================================== */
-main {
-  color: #444141;
-}
-
 main section {
-  height: 90vh;
+  height: 100vh;
   padding-top: 10vh;
 }
 
 main section#about {
-  background: #699;
+  background-color: #699;
   display: flex;
   align-items: center;
 }
@@ -70,7 +81,7 @@ main section#about #about-content {
 }
 
 main section#projects {
-  background: #c69;
+  background-color: #c69;
   display: flex;
 }
 
@@ -83,7 +94,7 @@ main section#projects #projects-gallery {
 }
 
 main section#contact {
-  background: #699;
+  background-color: #699;
   height: 80vh;
 }
 
@@ -97,13 +108,12 @@ main section#contact form {
 main section#contact form input,
 main section#contact form textarea {
   border: solid 1px #998099;
-  box-sizing: border-box;
   transition: all 0.3s ease-in-out;
 }
 
 main section#contact form input:hover,
 main section#contact form textarea:hover {
-  background: #c69;
+  background-color: #c69;
   color: #fff;
 }
 
@@ -125,6 +135,6 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #998099;
+  background-color: #998099;
 }
 /*# sourceMappingURL=style.css.map */
