@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 { font-family: $second-font; }
   display: flex;
   position: fixed;
   background-color: $venus;
-  height: 10vh;
+  height: 50px;
   align-items: center;
   border: 1px solid $black;
   list-style: none;
@@ -71,8 +71,14 @@ main {
     background-color: $patina;
     display: flex;
     align-items: flex-start;
-    // #about-portrait {
-    // }
+    #about-portrait {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        img {
+          height: 75vh;
+        }
+    }
     // #about-content {
     // }
   }
@@ -89,8 +95,8 @@ main {
 
   section#contact {
     background-color: $patina;
-    height: 80vh;
-    padding-top: 5vh;
+    height: 85vh;
+    padding-top: 50px;
     display: flex;
     align-items: flex-start;
     // #contact-content {

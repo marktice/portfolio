@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   position: fixed;
   background-color: #998099;
-  height: 10vh;
+  height: 50px;
   align-items: center;
   border: 1px solid #000;
   list-style: none;
@@ -75,6 +75,16 @@ main section#about {
   align-items: flex-start;
 }
 
+main section#about #about-portrait {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main section#about #about-portrait img {
+  height: 75vh;
+}
+
 main section#projects {
   background-color: #c69;
   display: flex;
@@ -83,8 +93,8 @@ main section#projects {
 
 main section#contact {
   background-color: #699;
-  height: 80vh;
-  padding-top: 5vh;
+  height: 85vh;
+  padding-top: 50px;
   display: flex;
   align-items: flex-start;
 }
