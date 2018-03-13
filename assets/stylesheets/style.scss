@@ -20,7 +20,10 @@ body {
   color: $text-color;
 }
 
-h1, h2, h3, h4, h5, h6 { font-family: $second-font; }
+h1, h2, h3, h4, h5, h6 { 
+  font-family: $second-font;
+  font-weight: 900;
+}
 
 #page-wrapper {
   // width: 100%;
@@ -35,20 +38,21 @@ h1, h2, h3, h4, h5, h6 { font-family: $second-font; }
   width: 100%;
   display: flex;
   position: fixed;
-  background-color: $venus;
+  background-color: $dark-slate-grey;
   height: 50px;
   align-items: center;
-  border: 1px solid $black;
+  border: 1px solid $steel-blue;
   list-style: none;
-  .profile-pic {
+  #logo {
     // margin-left: auto;
+    color: $white;
     margin-left: 10px;
     margin-right: auto;
   }
   li:not(.profile-pic){
     margin-right: 10px;
     margin-left: 10px;
-    a:hover { color: $hopbush; }
+    a:hover { color: $steel-blue; }
   }
 }
 
@@ -68,7 +72,7 @@ main {
   }
 
   section#about {
-    background-color: $patina;
+    background-color: $steel-blue;
     display: flex;
     align-items: flex-start;
     #about-portrait {
@@ -84,7 +88,7 @@ main {
   }
 
   section#projects {
-    background-color: $hopbush;
+    background-color: $fire-brick;
     display: flex;
     align-items: flex-start;
     // #projects-content {
@@ -94,7 +98,7 @@ main {
   }
 
   section#contact {
-    background-color: $patina;
+    background-color: $steel-blue;
     height: 85vh;
     padding-top: 50px;
     display: flex;
@@ -105,15 +109,21 @@ main {
       display: flex;
       flex-direction: column;
       input, textarea {
-        border: solid 1px $venus;
-        transition: all 0.3s ease-in-out;
+        font-size: inherit;
+        padding: 1em;
+        border: solid 1px $steel-blue;
+        transition: all 0.5s ease-in-out;
         &:hover {
-          background-color: $hopbush;
+          background-color: $fire-brick;
+          color: $white;
+        }
+        &:focus {
+          background-color: $dark-slate-grey;
           color: $white;
         }
       }
       textarea {
-        height: 100px;
+        height: 10em;
         resize: none;
       }
       input#contact-submit {
@@ -129,7 +139,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: $venus;
+  background-color: $dark-slate-grey;
 }
 
 // Small screen sizes

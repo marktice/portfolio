@@ -14,12 +14,13 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #444141;
+  font-family: "Source Code Pro", monospace;
+  color: #050607;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 900;
 }
 
 #page-wrapper {
@@ -33,14 +34,15 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   display: flex;
   position: fixed;
-  background-color: #998099;
+  background-color: #050607;
   height: 50px;
   align-items: center;
-  border: 1px solid #000;
+  border: 1px solid #39848D;
   list-style: none;
 }
 
-.nav-bar .profile-pic {
+.nav-bar #logo {
+  color: #fff;
   margin-left: 10px;
   margin-right: auto;
 }
@@ -51,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-bar li:not(.profile-pic) a:hover {
-  color: #c69;
+  color: #39848D;
 }
 
 /* PAGES
@@ -70,7 +72,7 @@ main .col {
 }
 
 main section#about {
-  background-color: #699;
+  background-color: #39848D;
   display: flex;
   align-items: flex-start;
 }
@@ -86,13 +88,13 @@ main section#about #about-portrait img {
 }
 
 main section#projects {
-  background-color: #c69;
+  background-color: #9D1840;
   display: flex;
   align-items: flex-start;
 }
 
 main section#contact {
-  background-color: #699;
+  background-color: #39848D;
   height: 85vh;
   padding-top: 50px;
   display: flex;
@@ -105,17 +107,24 @@ main section#contact form {
 }
 
 main section#contact form input, main section#contact form textarea {
-  border: solid 1px #998099;
-  transition: all 0.3s ease-in-out;
+  font-size: inherit;
+  padding: 1em;
+  border: solid 1px #39848D;
+  transition: all 0.5s ease-in-out;
 }
 
 main section#contact form input:hover, main section#contact form textarea:hover {
-  background-color: #c69;
+  background-color: #9D1840;
+  color: #fff;
+}
+
+main section#contact form input:focus, main section#contact form textarea:focus {
+  background-color: #050607;
   color: #fff;
 }
 
 main section#contact form textarea {
-  height: 100px;
+  height: 10em;
   resize: none;
 }
 
@@ -132,6 +141,6 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #998099;
+  background-color: #050607;
 }
 /*# sourceMappingURL=style.css.map */

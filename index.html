@@ -6,13 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mark Tice</title>
   <link rel="stylesheet" href="/assets/stylesheets/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 </head>
 <body>
   <div id="page-wrapper">
     <header id="top">
       <nav role="navigation">
         <ul class="nav-bar">
-          <li class="profile-pic">PIC</li>
+          <li id="logo">Mark Tice</li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -23,11 +24,7 @@
     <main>
       <section id="about">
         <div class="col" id="about-portrait">
-          <!-- <picture> -->
-            <!-- <source srcset="/assets/img/profile-pic-sf.jpg" media="(min-width: 1200px)"> -->
-            <!-- <source srcset="/assets/img/profile-pic-sf.jpg" media="(min-width: 800px)"> -->
-            <img src="/assets/img/profile-pic-sf.jpg" alt="Picture of Mark Tice in San Fran" id="portrait-img">
-          <!-- </picture> -->
+          <img src="/assets/img/profile-pic-sf.jpg" alt="Picture of Mark Tice in San Fran" id="portrait-img">
         </div>
         <div class="col" id="about-content">
           <h1>Mark Tice</h1>
@@ -50,6 +47,7 @@
       <section id="contact">
         <div class="col" id="contact-content">
           <h2>Contact me</h2>
+          <p>Fill out the form to send me a message</p>
         </div>
         <form class="col" action="#about" method="get">
           <input type="text" name="name" id="contact-name" placeholder="NAME">
