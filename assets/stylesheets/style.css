@@ -46,24 +46,29 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #39848D;
 }
 
-.nav-bar {
+nav {
   width: 100%;
   display: inline-block;
   position: sticky;
+  top: 0;
+  z-index: 999;
   background-color: #333333;
   height: 50px;
+}
+
+nav .nav-bar-sticky {
+  margin: 14.5px;
   list-style: none;
 }
 
-.nav-bar #logo {
+nav .nav-bar-sticky li {
+  display: inline-block;
+}
+
+nav .nav-bar-sticky #logo {
   color: #fff;
   margin-left: 10px;
   margin-right: auto;
-}
-
-.nav-bar li:not(.profile-pic) {
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 main section {
@@ -81,7 +86,7 @@ main section#landing {
 }
 
 main section#landing #title-header {
-  z-index: 1;
+  z-index: 2;
   font-size: 2.5em;
   text-align: end;
   position: absolute;
@@ -116,6 +121,18 @@ main section#landing #subtitle-header {
   right: 10%;
 }
 
+main section#landing #down-arrow {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  font-size: 2em;
+  color: #fff;
+}
+
+main section#landing #down-arrow:hover {
+  color: #9D1840;
+}
+
 main section#about {
   background-color: #39848D;
 }
@@ -126,7 +143,7 @@ main section#projects {
 
 main section#contact {
   background-color: #39848D;
-  height: 85vh;
+  height: 600px;
   padding-top: 50px;
 }
 
@@ -142,14 +159,6 @@ main section#contact form input, main section#contact form textarea {
   padding: 1em;
   transition: all 0.5s ease-in-out;
   margin-bottom: 3px;
-}
-
-main section#contact form input:hover, main section#contact form textarea:hover {
-  color: #333333;
-}
-
-main section#contact form input:focus, main section#contact form textarea:focus {
-  color: #333333;
 }
 
 main section#contact form textarea {
@@ -172,23 +181,33 @@ main section#contact form input#contact-submit:hover {
 }
 
 footer {
-  height: 100px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   background-color: #333333;
+  height: 100px;
 }
 
-footer i {
+footer .social-container {
+  display: flex;
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-container i {
   color: #fff;
   font-size: 1.5em;
 }
 
-footer i:visited {
+footer .social-container i:visited {
   color: #fff;
 }
 
-footer i:hover {
+footer .social-container i:hover {
   color: #39848D;
+}
+
+footer .copyright {
+  text-align: center;
+  color: #fff;
+  font-size: 0.5em;
 }
 /*# sourceMappingURL=style.css.map */

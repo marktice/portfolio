@@ -30,22 +30,30 @@ h1, h2, h3, h4, h5, h6 {
   background-color: $primary;
 }
   
-.nav-bar {
+nav {
   width: 100%;
   display: inline-block;
   position: sticky;
+  top: 0;
+  z-index: 999;
   background-color: $grey;
   height: 50px;
-  list-style: none;
-  #logo {
-    color: $white;
-    margin-left: 10px;
-    // margin-left: auto;
-    margin-right: auto;
-  }
-  li:not(.profile-pic){
-    margin-right: 10px;
-    margin-left: 10px;
+  .nav-bar-sticky {
+    margin: 14.5px; // to center (better way??)
+    list-style: none;
+    li {
+      display: inline-block;
+    }
+    #logo {
+      color: $white;
+      margin-left: 10px;
+      // margin-left: auto;
+      margin-right: auto;
+    }
+    // li:not(.profile-pic){
+    //   margin-right: 10px;
+    //   margin-left: 10px;
+    // }
   }
 }
 
@@ -62,8 +70,9 @@ main {
     width: 100%;
     background-color: $grey;
     padding-right: 10%;
+    // z-index: 1;
     #title-header {
-      z-index: 1;
+      z-index: 2;
       font-size: 2.5em;
       text-align: end;
       position: absolute;
@@ -97,30 +106,30 @@ main {
       top: 35%;
       right: 10%;
     }
+    #down-arrow {
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      font-size: 2em;
+      color: $white;
+      &:hover{
+        color: $secondary;
+      }
+    }
   }
 
   section#about {
     background-color: $primary;
-    // #about-portrait {
-    // }
-    // #about-content {
-    // }
   }
 
   section#projects {
     background-color: $primary;
-    // #projects-content {
-    // }
-    // #gallery {
-    // }
   }
 
   section#contact {
     background-color: $primary;
-    height: 85vh;
+    height: 600px;
     padding-top: 50px;
-    // #contact-content {
-    // }
     form {
       padding-top: 1em;
       display: flex;
@@ -131,14 +140,14 @@ main {
         padding: 1em;
         transition: all 0.5s ease-in-out;
         margin-bottom: 3px;
-        &:hover {
-          // background-color: darken($color: $white, $amount: 50%);
-          color: $grey;
-        }
-        &:focus {
-          // background-color: darken($color: $white, $amount: 10%);
-          color: $grey;
-        }
+        // &:hover {
+          // background-color: wheat;
+        //   color: $grey;
+        // }
+        // &:focus {
+        //   background-color: darken($color: $white, $amount: 10%);
+        //   color: $grey;
+        // }
       }
       textarea {
         height: 10em;
@@ -158,23 +167,32 @@ main {
 }
 
 footer {
-  height: 100px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   background-color: $grey;
-
-  i {
-    color: $white;
-    font-size: 1.5em;
-    &:visited {
+  height: 100px;
+  .social-container {
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    i {
       color: $white;
-    }
-    &:hover {
-      color: $primary;
+      font-size: 1.5em;
+      &:visited {
+        color: $white;
+      }
+      &:hover {
+        color: $primary;
+      }
     }
   }
+  .copyright {
+    text-align: center;
+    color: $white;
+    font-size: 0.5em;
+  }
+
 }
+
 
 // @media only screen and (min-width: 480px) {
 

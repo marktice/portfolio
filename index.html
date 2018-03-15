@@ -12,22 +12,23 @@
 <body>
   <div id="page-wrapper">
     <header id="top">
-      <!-- <nav role="navigation">
-        <ul class="nav-bar">
-          <li id="logo">Mark Tice</li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav> -->
     </header>
 
     <main>
       <section id="landing">
         <h1 id="title-header">Mark Tice</h1>
         <p id="subtitle-header">Fullstack Dev</p>
+        <a href="#about" id="down-arrow"><i class="fas fa-angle-down"></i></a>
       </section>
 
+      <nav role="navigation">
+          <ul class="nav-bar-sticky">
+            <li id="logo"><i class="fas fa-bars"></i></li>
+            <!-- <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li> -->
+          </ul>
+        </nav>
 
       <section id="about">
         <div class="col" id="about-portrait">
@@ -35,7 +36,15 @@
         </div>
         <div class="col" id="about-content">
           <h1>About</h1>
-          <p>blablabla i am so great Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aspernatur beatae consequuntur sequi inventore iusto tempora amet cum voluptate aliquid.</p>
+          <p>Hi, I’m Mark and I’m a full-stack developer based in Melbourne, Australia. As of writing this bio I am honing my skills by studying full-time at Coder Academy. 
+
+          <p>I see every new experience as an opportunity to learn. Coming from a background in engineering i love problem solving and understanding the intricate nature of how things work.</p>
+          
+          My favorite projects are those that require me to push beyond my boundaries and acquire new skills and knowledge in order to succeed.
+          
+          I'm passionate about quality clean code, best practices, and performance. 
+          
+          When I'm not behind a computer screen, I'm out there somewhere exploring, or at home gaming or reading.</p>
           <p>coding skills: html, css, ruby, javascript</p>
         </div>
       </section>
@@ -65,10 +74,15 @@
     </main>
 
     <footer>
-      <a href="https://www.linkedin.com/in/mark-tice-369570158/" id="linkdin"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/marktice" id="github"><i class="fab fa-github"></i></a>
-      <a href="https://codepen.io/marktice/" id="codepen"><i class="fab fa-codepen"></i></a>
-      <a href="#top"><i class="fas fa-angle-up"></i></a>
+      <div class="social-container">
+        <a href="https://www.linkedin.com/in/mark-tice-369570158/" id="linkdin" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/marktice" id="github" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://codepen.io/marktice/" id="codepen" target="_blank"><i class="fab fa-codepen"></i></a>
+        <a href="#top"><i class="fas fa-angle-up"></i></a>
+      </div>
+      <div class="copyright">
+        <span>Designed and constructed by Mark Tice</span>
+      </div>
     </footer>
   </div>
 </body>
