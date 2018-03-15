@@ -1,13 +1,11 @@
 @import '_variables';
 
-// border-box and smooth scrolling on links
 html {
   box-sizing: border-box;
   scroll-behavior: smooth; 
   overflow-y: scroll;
 }
 
-// inherit border-box on all elements anywhere, before and after
 *, *:before, *:after { box-sizing: inherit; }
 
 * {
@@ -16,48 +14,41 @@ html {
 }
 
 body {
-  font-family: $main-font;
-  color: $text-color;
+  font-family: $content-font;
+  color: $grey;
 }
 
 h1, h2, h3, h4, h5, h6 { 
-  font-family: $second-font;
+  font-family: $header-font;
   font-weight: 900;
 }
 
 #page-wrapper {
-  // width: 100%;
+  width: 100%;
   // max-width: 1200px;
   margin: 0 auto;
-  background-color: $white;
+  background-color: $primary;
 }
   
-  /* NAVBAR
-  ============================================== */
 .nav-bar {
   width: 100%;
-  display: flex;
-  position: fixed;
-  background-color: $dark-slate-grey;
+  display: inline-block;
+  position: sticky;
+  background-color: $grey;
   height: 50px;
-  align-items: center;
-  border: 1px solid $steel-blue;
   list-style: none;
   #logo {
-    // margin-left: auto;
     color: $white;
     margin-left: 10px;
+    // margin-left: auto;
     margin-right: auto;
   }
   li:not(.profile-pic){
     margin-right: 10px;
     margin-left: 10px;
-    a:hover { color: $steel-blue; }
   }
 }
 
-/* PAGES
-   ============================================== */
 main {
   section {
     height: 100vh;
@@ -65,32 +56,32 @@ main {
     margin: 0 auto;
     padding-top: 15vh;
   }
-  .col {
-    flex-basis: 92%;
-    margin-left: 4%;
-    margin-right: 4%;
+
+  section#landing {
+    color: $white;
+    width: 100%;
+    background-color: $grey;
+    padding-right: 10%;
+    #title-header {
+      // font-weight: 900;
+      font-size: 3em;
+      text-align: end;
+    }
+    #subtitle-header {
+      text-align: end;
+    }
   }
 
   section#about {
-    background-color: $steel-blue;
-    display: flex;
-    align-items: flex-start;
-    #about-portrait {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-        img {
-          height: 75vh;
-        }
-    }
+    background-color: $primary;
+    // #about-portrait {
+    // }
     // #about-content {
     // }
   }
 
   section#projects {
-    background-color: $fire-brick;
-    display: flex;
-    align-items: flex-start;
+    background-color: $primary;
     // #projects-content {
     // }
     // #gallery {
@@ -98,11 +89,9 @@ main {
   }
 
   section#contact {
-    background-color: $steel-blue;
+    background-color: $primary;
     height: 85vh;
     padding-top: 50px;
-    display: flex;
-    align-items: flex-start;
     // #contact-content {
     // }
     form {
@@ -111,15 +100,14 @@ main {
       input, textarea {
         font-size: inherit;
         padding: 1em;
-        border: solid 1px $steel-blue;
         transition: all 0.5s ease-in-out;
         &:hover {
-          background-color: $fire-brick;
-          color: $white;
+          background-color: darken($color: $white, $amount: 5%);
+          color: $grey;
         }
         &:focus {
-          background-color: $dark-slate-grey;
-          color: $white;
+          background-color: darken($color: $white, $amount: 10%);
+          color: $grey;
         }
       }
       textarea {
@@ -127,6 +115,8 @@ main {
         resize: none;
       }
       input#contact-submit {
+        color: $white;
+        background-color: $secondary;
         cursor: pointer;
         &:disabled { opacity: 0.5; }
       }
@@ -135,11 +125,11 @@ main {
 }
 
 footer {
-  height: 10vh;
+  height: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: $dark-slate-grey;
+  background-color: $grey;
 }
 
 // Small screen sizes

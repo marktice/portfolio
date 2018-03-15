@@ -14,30 +14,27 @@ html {
 }
 
 body {
-  font-family: "Source Code Pro", monospace;
-  color: #050607;
+  font-family: Montserrat, "Source Code Pro", monospace;
+  color: #333333;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Source Code Pro", monospace;
+  font-family: Audiowide, "Source Code Pro", monospace;
   font-weight: 900;
 }
 
 #page-wrapper {
+  width: 100%;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #39848D;
 }
 
-/* NAVBAR
-  ============================================== */
 .nav-bar {
   width: 100%;
-  display: flex;
-  position: fixed;
-  background-color: #050607;
+  display: inline-block;
+  position: sticky;
+  background-color: #333333;
   height: 50px;
-  align-items: center;
-  border: 1px solid #39848D;
   list-style: none;
 }
 
@@ -52,12 +49,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 10px;
 }
 
-.nav-bar li:not(.profile-pic) a:hover {
-  color: #39848D;
-}
-
-/* PAGES
-   ============================================== */
 main section {
   height: 100vh;
   width: 90%;
@@ -65,40 +56,34 @@ main section {
   padding-top: 15vh;
 }
 
-main .col {
-  flex-basis: 92%;
-  margin-left: 4%;
-  margin-right: 4%;
+main section#landing {
+  color: #fff;
+  width: 100%;
+  background-color: #333333;
+  padding-right: 10%;
+}
+
+main section#landing #title-header {
+  font-size: 3em;
+  text-align: end;
+}
+
+main section#landing #subtitle-header {
+  text-align: end;
 }
 
 main section#about {
   background-color: #39848D;
-  display: flex;
-  align-items: flex-start;
-}
-
-main section#about #about-portrait {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-main section#about #about-portrait img {
-  height: 75vh;
 }
 
 main section#projects {
-  background-color: #9D1840;
-  display: flex;
-  align-items: flex-start;
+  background-color: #39848D;
 }
 
 main section#contact {
   background-color: #39848D;
   height: 85vh;
   padding-top: 50px;
-  display: flex;
-  align-items: flex-start;
 }
 
 main section#contact form {
@@ -109,18 +94,17 @@ main section#contact form {
 main section#contact form input, main section#contact form textarea {
   font-size: inherit;
   padding: 1em;
-  border: solid 1px #39848D;
   transition: all 0.5s ease-in-out;
 }
 
 main section#contact form input:hover, main section#contact form textarea:hover {
-  background-color: #9D1840;
-  color: #fff;
+  background-color: #f2f2f2;
+  color: #333333;
 }
 
 main section#contact form input:focus, main section#contact form textarea:focus {
-  background-color: #050607;
-  color: #fff;
+  background-color: #e6e6e6;
+  color: #333333;
 }
 
 main section#contact form textarea {
@@ -129,6 +113,8 @@ main section#contact form textarea {
 }
 
 main section#contact form input#contact-submit {
+  color: #fff;
+  background-color: #9D1840;
   cursor: pointer;
 }
 
@@ -137,10 +123,10 @@ main section#contact form input#contact-submit:disabled {
 }
 
 footer {
-  height: 10vh;
+  height: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #050607;
+  background-color: #333333;
 }
 /*# sourceMappingURL=style.css.map */
