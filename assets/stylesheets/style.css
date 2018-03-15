@@ -1,3 +1,21 @@
+@keyframes glitchy {
+  0% {
+    transform: translate(-3px, 3px);
+  }
+  25% {
+    transform: translate(-3px, -3px);
+  }
+  50% {
+    transform: translate(3px, 3px);
+  }
+  75% {
+    transform: translate(3px, -3px);
+  }
+  100% {
+    transform: translate(-3px, 3px);
+  }
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -20,7 +38,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Audiowide, "Source Code Pro", monospace;
-  font-weight: 900;
 }
 
 #page-wrapper {
@@ -64,12 +81,39 @@ main section#landing {
 }
 
 main section#landing #title-header {
-  font-size: 3em;
+  z-index: 1;
+  font-size: 2.5em;
   text-align: end;
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  left: 0;
+}
+
+main section#landing #title-header:hover:before {
+  content: "Mark Tice";
+  position: absolute;
+  color: #39848D;
+  z-index: -1;
+  animation: glitchy 0.3s ease 0.1s infinite;
+}
+
+main section#landing #title-header:hover:after {
+  content: "Mark Tice";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  color: #9D1840;
+  animation: glitchy 0.3s ease infinite;
 }
 
 main section#landing #subtitle-header {
-  text-align: end;
+  position: absolute;
+  top: 35%;
+  right: 10%;
 }
 
 main section#about {
@@ -87,23 +131,24 @@ main section#contact {
 }
 
 main section#contact form {
+  padding-top: 1em;
   display: flex;
   flex-direction: column;
 }
 
 main section#contact form input, main section#contact form textarea {
-  font-size: inherit;
+  font-size: 1em;
+  font-family: Montserrat, "Source Code Pro", monospace;
   padding: 1em;
   transition: all 0.5s ease-in-out;
+  margin-bottom: 3px;
 }
 
 main section#contact form input:hover, main section#contact form textarea:hover {
-  background-color: #f2f2f2;
   color: #333333;
 }
 
 main section#contact form input:focus, main section#contact form textarea:focus {
-  background-color: #e6e6e6;
   color: #333333;
 }
 
@@ -114,12 +159,16 @@ main section#contact form textarea {
 
 main section#contact form input#contact-submit {
   color: #fff;
-  background-color: #9D1840;
+  background-color: #333333;
   cursor: pointer;
 }
 
 main section#contact form input#contact-submit:disabled {
   opacity: 0.5;
+}
+
+main section#contact form input#contact-submit:hover {
+  background-color: #9D1840;
 }
 
 footer {
@@ -128,5 +177,18 @@ footer {
   justify-content: space-around;
   align-items: center;
   background-color: #333333;
+}
+
+footer i {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+footer i:visited {
+  color: #fff;
+}
+
+footer i:hover {
+  color: #39848D;
 }
 /*# sourceMappingURL=style.css.map */

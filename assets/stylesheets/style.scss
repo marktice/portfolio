@@ -1,4 +1,5 @@
 @import '_variables';
+@import '_animations';
 
 html {
   box-sizing: border-box;
@@ -20,7 +21,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 { 
   font-family: $header-font;
-  font-weight: 900;
 }
 
 #page-wrapper {
@@ -63,12 +63,39 @@ main {
     background-color: $grey;
     padding-right: 10%;
     #title-header {
-      // font-weight: 900;
-      font-size: 3em;
+      z-index: 1;
+      font-size: 2.5em;
       text-align: end;
+      position: absolute;
+      top: 25%;
+      right: 10%;
+      left: 0;
+
+      &:hover {
+        &:before {
+          content: "Mark Tice";
+          position: absolute;
+          color: $primary;
+          z-index: -1;
+          animation: glitchy 0.3s ease 0.1s infinite;
+        }
+        &:after {
+          content: "Mark Tice";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: -2;
+          color: $secondary;
+          animation: glitchy 0.3s ease infinite;
+        }
+      }
     }
     #subtitle-header {
-      text-align: end;
+      position: absolute;
+      top: 35%;
+      right: 10%;
     }
   }
 
@@ -95,18 +122,21 @@ main {
     // #contact-content {
     // }
     form {
+      padding-top: 1em;
       display: flex;
       flex-direction: column;
       input, textarea {
-        font-size: inherit;
+        font-size: 1em;
+        font-family: $content-font;
         padding: 1em;
         transition: all 0.5s ease-in-out;
+        margin-bottom: 3px;
         &:hover {
-          background-color: darken($color: $white, $amount: 5%);
+          // background-color: darken($color: $white, $amount: 50%);
           color: $grey;
         }
         &:focus {
-          background-color: darken($color: $white, $amount: 10%);
+          // background-color: darken($color: $white, $amount: 10%);
           color: $grey;
         }
       }
@@ -116,9 +146,12 @@ main {
       }
       input#contact-submit {
         color: $white;
-        background-color: $secondary;
+        background-color: $grey;
         cursor: pointer;
         &:disabled { opacity: 0.5; }
+        &:hover {
+          background-color: $secondary;
+        }
       }
     }
   }
@@ -130,9 +163,19 @@ footer {
   justify-content: space-around;
   align-items: center;
   background-color: $grey;
+
+  i {
+    color: $white;
+    font-size: 1.5em;
+    &:visited {
+      color: $white;
+    }
+    &:hover {
+      color: $primary;
+    }
+  }
 }
 
-// Small screen sizes
 // @media only screen and (min-width: 480px) {
 
 // }
