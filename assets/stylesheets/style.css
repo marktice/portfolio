@@ -43,12 +43,10 @@ h1, h2, h3, h4, h5, h6 {
 #page-wrapper {
   width: 100%;
   margin: 0 auto;
-  background-color: #39848D;
 }
 
 nav {
   width: 100%;
-  display: inline-block;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -56,30 +54,33 @@ nav {
   height: 50px;
 }
 
-nav .nav-bar-sticky {
-  margin: 14.5px;
-  list-style: none;
-}
-
 nav .nav-bar-sticky li {
+  margin-top: 14.5px;
   display: inline-block;
+  list-style: none;
+  width: 33%;
+  text-align: center;
 }
 
-nav .nav-bar-sticky #logo {
+nav .nav-bar-sticky li a {
+  font-family: Audiowide, "Source Code Pro", monospace;
   color: #fff;
-  margin-left: 10px;
-  margin-right: auto;
+  text-decoration: none;
+}
+
+nav li:not(#about-link) {
+  margin-left: -1em;
 }
 
 main section {
-  height: 100vh;
-  width: 90%;
+  min-height: 700px;
   margin: 0 auto;
-  padding-top: 15vh;
+  padding-top: 50px;
 }
 
 main section#landing {
   color: #fff;
+  height: 100vh;
   width: 100%;
   background-color: #333333;
   padding-right: 10%;
@@ -93,6 +94,7 @@ main section#landing #title-header {
   top: 25%;
   right: 10%;
   left: 0;
+  cursor: default;
 }
 
 main section#landing #title-header:hover:before {
@@ -134,7 +136,18 @@ main section#landing #down-arrow:hover {
 }
 
 main section#about {
+  height: 1400px;
+}
+
+main section#about #about-content {
+  height: 700px;
+}
+
+main section#about #about-skills {
+  height: 700px;
+  width: 100%;
   background-color: #39848D;
+  color: #fff;
 }
 
 main section#projects {
@@ -147,7 +160,13 @@ main section#contact {
   padding-top: 50px;
 }
 
+main section#contact #contact-content {
+  color: #fff;
+}
+
 main section#contact form {
+  width: 75%;
+  margin: 0 auto;
   padding-top: 1em;
   display: flex;
   flex-direction: column;
@@ -159,6 +178,12 @@ main section#contact form input, main section#contact form textarea {
   padding: 1em;
   transition: all 0.5s ease-in-out;
   margin-bottom: 3px;
+  background-color: #C5EFF7;
+}
+
+main section#contact form input:hover, main section#contact form input:focus, main section#contact form textarea:hover, main section#contact form textarea:focus {
+  background-color: #fff;
+  color: #333333;
 }
 
 main section#contact form textarea {
@@ -208,6 +233,6 @@ footer .social-container i:hover {
 footer .copyright {
   text-align: center;
   color: #fff;
-  font-size: 0.5em;
+  font-size: 0.75em;
 }
 /*# sourceMappingURL=style.css.map */

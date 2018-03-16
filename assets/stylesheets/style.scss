@@ -27,46 +27,53 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   // max-width: 1200px;
   margin: 0 auto;
-  background-color: $primary;
 }
-  
+
 nav {
   width: 100%;
-  display: inline-block;
+  // display: inline-block;
   position: sticky;
   top: 0;
   z-index: 999;
   background-color: $grey;
   height: 50px;
+
   .nav-bar-sticky {
-    margin: 14.5px; // to center (better way??)
-    list-style: none;
     li {
+      margin-top: 14.5px; // to center (better way??)
       display: inline-block;
-    }
-    #logo {
-      color: $white;
-      margin-left: 10px;
-      // margin-left: auto;
-      margin-right: auto;
-    }
-    // li:not(.profile-pic){
-    //   margin-right: 10px;
-    //   margin-left: 10px;
-    // }
+      list-style: none;
+      width: 33%;
+      text-align: center;
+      a {
+        font-family: $header-font;
+        color: $white;
+        text-decoration: none;
+      }
+      // &:visited {
+      //   color: $white;
+      // }
+      // &:link {
+      //   color: $white;
+      // }
+    }  
   }
+    li:not(#about-link){
+      margin-left: -1em;
+    }
 }
 
 main {
   section {
-    height: 100vh;
-    width: 90%;
+    min-height: 700px;
+    // width: 90%;
     margin: 0 auto;
-    padding-top: 15vh;
+    padding-top: 50px;
   }
 
   section#landing {
     color: $white;
+    height: 100vh;
     width: 100%;
     background-color: $grey;
     padding-right: 10%;
@@ -79,6 +86,7 @@ main {
       top: 25%;
       right: 10%;
       left: 0;
+      cursor: default;
 
       &:hover {
         &:before {
@@ -119,7 +127,18 @@ main {
   }
 
   section#about {
-    background-color: $primary;
+    height: 1400px;
+    
+    #about-content {
+      height: 700px;
+    }
+    #about-skills {
+      height: 700px;
+      width: 100%;
+      background-color: $primary;
+      color: $white;
+    }
+
   }
 
   section#projects {
@@ -130,7 +149,13 @@ main {
     background-color: $primary;
     height: 600px;
     padding-top: 50px;
+    #contact-content {
+      color: $white;
+    }
+
     form {
+      width: 75%;
+      margin: 0 auto;
       padding-top: 1em;
       display: flex;
       flex-direction: column;
@@ -140,14 +165,11 @@ main {
         padding: 1em;
         transition: all 0.5s ease-in-out;
         margin-bottom: 3px;
-        // &:hover {
-          // background-color: wheat;
-        //   color: $grey;
-        // }
-        // &:focus {
-        //   background-color: darken($color: $white, $amount: 10%);
-        //   color: $grey;
-        // }
+        background-color: $light-primary;
+        &:hover, &:focus {
+          background-color: $white;
+          color: $grey;
+        }
       }
       textarea {
         height: 10em;
@@ -188,9 +210,8 @@ footer {
   .copyright {
     text-align: center;
     color: $white;
-    font-size: 0.5em;
+    font-size: 0.75em;
   }
-
 }
 
 
