@@ -201,11 +201,9 @@ section#projects {
 
 section#contact {
   background-color: $secondary;
+  color: $white;
   height: 600px;
   padding-top: 50px;
-  #contact-content {
-    color: $white;
-  }
 
   form {
     width: 75%;
@@ -219,7 +217,7 @@ section#contact {
       padding: 1em;
       transition: all 0.5s ease-in-out;
       margin-bottom: 3px;
-      background-color: $light-primary;
+      // background-color: $light-primary;
       &:hover, &:focus {
         background-color: $white;
         color: $grey;

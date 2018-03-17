@@ -235,12 +235,9 @@ section#projects .projects-container .project-item img {
 
 section#contact {
   background-color: #9D1840;
+  color: #fff;
   height: 600px;
   padding-top: 50px;
-}
-
-section#contact #contact-content {
-  color: #fff;
 }
 
 section#contact form {
@@ -257,7 +254,6 @@ section#contact form input, section#contact form textarea {
   padding: 1em;
   transition: all 0.5s ease-in-out;
   margin-bottom: 3px;
-  background-color: #C5EFF7;
 }
 
 section#contact form input:hover, section#contact form input:focus, section#contact form textarea:hover, section#contact form textarea:focus {
