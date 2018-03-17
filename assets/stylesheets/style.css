@@ -38,10 +38,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Audiowide, "Source Code Pro", monospace;
+  font-weight: normal;
 }
 
 #page-wrapper {
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -72,13 +72,13 @@ nav li:not(#about-link) {
   margin-left: -1em;
 }
 
-main section {
+section {
   min-height: 700px;
   margin: 0 auto;
   padding-top: 50px;
 }
 
-main section#landing {
+section#landing {
   color: #fff;
   height: 100vh;
   width: 100%;
@@ -86,7 +86,7 @@ main section#landing {
   padding-right: 10%;
 }
 
-main section#landing #title-header {
+section#landing #title-header {
   z-index: 2;
   font-size: 2.5em;
   text-align: end;
@@ -97,7 +97,7 @@ main section#landing #title-header {
   cursor: default;
 }
 
-main section#landing #title-header:hover:before {
+section#landing #title-header:hover:before {
   content: "Mark Tice";
   position: absolute;
   color: #39848D;
@@ -105,7 +105,7 @@ main section#landing #title-header:hover:before {
   animation: glitchy 0.3s ease 0.1s infinite;
 }
 
-main section#landing #title-header:hover:after {
+section#landing #title-header:hover:after {
   content: "Mark Tice";
   position: absolute;
   top: 0;
@@ -117,13 +117,13 @@ main section#landing #title-header:hover:after {
   animation: glitchy 0.3s ease infinite;
 }
 
-main section#landing #subtitle-header {
+section#landing #subtitle-header {
   position: absolute;
   top: 35%;
   right: 10%;
 }
 
-main section#landing #down-arrow {
+section#landing #down-arrow {
   position: absolute;
   bottom: 5%;
   left: 50%;
@@ -131,40 +131,58 @@ main section#landing #down-arrow {
   color: #fff;
 }
 
-main section#landing #down-arrow:hover {
+section#landing #down-arrow:hover {
   color: #9D1840;
 }
 
-main section#about {
-  height: 1400px;
+section#about {
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 0;
 }
 
-main section#about #about-content {
-  height: 700px;
-}
-
-main section#about #about-skills {
+section#about .col {
   height: 700px;
   width: 100%;
+  padding-top: 50px;
+}
+
+section#about #about-skills {
   background-color: #39848D;
   color: #fff;
 }
 
-main section#projects {
+section#projects {
+  color: #fff;
   background-color: #39848D;
 }
 
-main section#contact {
+section#projects .projects-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+section#projects .projects-container .project-item {
+  text-align: center;
+  margin-top: 10px;
+  flex-basis: 300px;
+  color: #333333;
+  background-color: #C5EFF7;
+}
+
+section#contact {
   background-color: #39848D;
   height: 600px;
   padding-top: 50px;
 }
 
-main section#contact #contact-content {
+section#contact #contact-content {
   color: #fff;
 }
 
-main section#contact form {
+section#contact form {
   width: 75%;
   margin: 0 auto;
   padding-top: 1em;
@@ -172,7 +190,7 @@ main section#contact form {
   flex-direction: column;
 }
 
-main section#contact form input, main section#contact form textarea {
+section#contact form input, section#contact form textarea {
   font-size: 1em;
   font-family: Montserrat, "Source Code Pro", monospace;
   padding: 1em;
@@ -181,27 +199,27 @@ main section#contact form input, main section#contact form textarea {
   background-color: #C5EFF7;
 }
 
-main section#contact form input:hover, main section#contact form input:focus, main section#contact form textarea:hover, main section#contact form textarea:focus {
+section#contact form input:hover, section#contact form input:focus, section#contact form textarea:hover, section#contact form textarea:focus {
   background-color: #fff;
   color: #333333;
 }
 
-main section#contact form textarea {
+section#contact form textarea {
   height: 10em;
   resize: none;
 }
 
-main section#contact form input#contact-submit {
+section#contact form input#contact-submit {
   color: #fff;
   background-color: #333333;
   cursor: pointer;
 }
 
-main section#contact form input#contact-submit:disabled {
+section#contact form input#contact-submit:disabled {
   opacity: 0.5;
 }
 
-main section#contact form input#contact-submit:hover {
+section#contact form input#contact-submit:hover {
   background-color: #9D1840;
 }
 
@@ -234,5 +252,11 @@ footer .copyright {
   text-align: center;
   color: #fff;
   font-size: 0.75em;
+}
+
+@media only screen and (min-width: 768px) {
+  .col {
+    flex-basis: 50%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -21,10 +21,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 { 
   font-family: $header-font;
+  font-weight: normal;
 }
 
 #page-wrapper {
-  width: 100%;
+  // width: 100%;
   // max-width: 1200px;
   margin: 0 auto;
 }
@@ -63,130 +64,153 @@ nav {
     }
 }
 
-main {
-  section {
-    min-height: 700px;
-    // width: 90%;
-    margin: 0 auto;
-    padding-top: 50px;
-  }
 
-  section#landing {
-    color: $white;
-    height: 100vh;
-    width: 100%;
-    background-color: $grey;
-    padding-right: 10%;
-    // z-index: 1;
-    #title-header {
-      z-index: 2;
-      font-size: 2.5em;
-      text-align: end;
-      position: absolute;
-      top: 25%;
-      right: 10%;
-      left: 0;
-      cursor: default;
+section {
+  min-height: 700px;
+  // width: 90%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
 
-      &:hover {
-        &:before {
-          content: "Mark Tice";
-          position: absolute;
-          color: $primary;
-          z-index: -1;
-          animation: glitchy 0.3s ease 0.1s infinite;
-        }
-        &:after {
-          content: "Mark Tice";
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          z-index: -2;
-          color: $secondary;
-          animation: glitchy 0.3s ease infinite;
-        }
+section#landing {
+  color: $white;
+  height: 100vh;
+  width: 100%;
+  background-color: $grey;
+  padding-right: 10%;
+  // z-index: 1;
+  #title-header {
+    z-index: 2;
+    font-size: 2.5em;
+    text-align: end;
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    left: 0;
+    cursor: default;
+
+    &:hover {
+      &:before {
+        content: "Mark Tice";
+        position: absolute;
+        color: $primary;
+        z-index: -1;
+        animation: glitchy 0.3s ease 0.1s infinite;
       }
-    }
-    #subtitle-header {
-      position: absolute;
-      top: 35%;
-      right: 10%;
-    }
-    #down-arrow {
-      position: absolute;
-      bottom: 5%;
-      left: 50%;
-      font-size: 2em;
-      color: $white;
-      &:hover{
+      &:after {
+        content: "Mark Tice";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -2;
         color: $secondary;
+        animation: glitchy 0.3s ease infinite;
       }
     }
   }
-
-  section#about {
-    height: 1400px;
-    
-    #about-content {
-      height: 700px;
-    }
-    #about-skills {
-      height: 700px;
-      width: 100%;
-      background-color: $primary;
-      color: $white;
-    }
-
+  #subtitle-header {
+    position: absolute;
+    top: 35%;
+    right: 10%;
   }
-
-  section#projects {
-    background-color: $primary;
+  #down-arrow {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    font-size: 2em;
+    color: $white;
+    &:hover{
+      color: $secondary;
+    }
   }
+}
 
-  section#contact {
-    background-color: $primary;
-    height: 600px;
+section#about {
+  // height: 1400px;
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 0;
+
+  .col {
+    height: 700px;
+    width: 100%;
     padding-top: 50px;
-    #contact-content {
-      color: $white;
-    }
+  }
+  
+  #about-content {
 
-    form {
-      width: 75%;
-      margin: 0 auto;
-      padding-top: 1em;
-      display: flex;
-      flex-direction: column;
-      input, textarea {
-        font-size: 1em;
-        font-family: $content-font;
-        padding: 1em;
-        transition: all 0.5s ease-in-out;
-        margin-bottom: 3px;
-        background-color: $light-primary;
-        &:hover, &:focus {
-          background-color: $white;
-          color: $grey;
-        }
+  }
+  #about-skills {
+    
+    background-color: $primary;
+    color: $white;
+  }
+
+}
+
+section#projects {
+  color: $white;
+  background-color: $primary;
+  .projects-container {
+    // height: 700px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    .project-item {
+      text-align: center;
+      margin-top: 10px;
+      flex-basis: 300px;
+      color: $grey;
+      background-color: $light-primary;
+    }
+  }
+}
+
+section#contact {
+  background-color: $primary;
+  height: 600px;
+  padding-top: 50px;
+  #contact-content {
+    color: $white;
+  }
+
+  form {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    input, textarea {
+      font-size: 1em;
+      font-family: $content-font;
+      padding: 1em;
+      transition: all 0.5s ease-in-out;
+      margin-bottom: 3px;
+      background-color: $light-primary;
+      &:hover, &:focus {
+        background-color: $white;
+        color: $grey;
       }
-      textarea {
-        height: 10em;
-        resize: none;
-      }
-      input#contact-submit {
-        color: $white;
-        background-color: $grey;
-        cursor: pointer;
-        &:disabled { opacity: 0.5; }
-        &:hover {
-          background-color: $secondary;
-        }
+    }
+    textarea {
+      height: 10em;
+      resize: none;
+    }
+    input#contact-submit {
+      color: $white;
+      background-color: $grey;
+      cursor: pointer;
+      &:disabled { opacity: 0.5; }
+      &:hover {
+        background-color: $secondary;
       }
     }
   }
 }
+
 
 footer {
   background-color: $grey;
@@ -219,6 +243,8 @@ footer {
 
 // }
 // Desktop screen sizes
-// @media only screen and (min-width: 768px) {
-
-// }
+@media only screen and (min-width: 768px) {
+  .col {
+    flex-basis: 50%;
+  }
+}
