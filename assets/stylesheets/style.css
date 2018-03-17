@@ -214,18 +214,22 @@ section#projects .projects-container .project-item {
   height: 300px;
   text-align: center;
   margin-top: 40px;
-  color: #333333;
-  background-color: #C5EFF7;
+  color: #fff;
+  background-color: #2a6269;
   box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.16), 0px 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 section#projects .projects-container .project-item h3 {
-  padding-top: 7.5%;
+  padding-top: 8.5%;
+}
+
+section#projects .projects-container .project-item p {
+  font-size: 0.875em;
 }
 
 section#projects .projects-container .project-item img {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   width: 280px;
 }
 
@@ -317,7 +321,7 @@ footer .copyright {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   .project-item {
     flex-basis: 560px !important;
     height: 510px !important;
