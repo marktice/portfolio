@@ -27,16 +27,13 @@
       <nav role="navigation">
           <ul class="nav-bar-sticky">
             <!-- <li id="logo"><i class="fas fa-bars"></i></li> -->
-            <li id="about-link"><a href="#about">About</a></li>
-            <li id="projects-link"><a href="#projects">Projects</a></li>
-            <li id="contact-link"><a href="#contact">Contact</a></li>
+            <li><a href="#about" id="about-link">About</a></li>
+            <li><a href="#projects" id="projects-link">Projects</a></li>
+            <li><a href="#contact" id="contact-link">Contact</a></li>
           </ul>
         </nav>
 
       <section id="about">
-        <!-- <div class="col" id="about-portrait"> -->
-          <!-- <img src="/assets/img/profile-pic-sf.jpg" alt="Picture of Mark Tice in San Fran" id="portrait-img"> -->
-        <!-- </div> -->
         <div class="col" id="about-content">
           <h2>About</h2>
           <p>Hi, I’m Mark and I’m a full-stack developer based in Melbourne, Australia. As of writing this bio I am honing my skills by studying full-time at Coder Academy.</p>
@@ -57,9 +54,11 @@
         <h2>Projects</h2>
         <div class="projects-container">
           <div class="project-item">
-            <h3>Terminal App</h3>
-            <img src="" alt="Picture of Terminal App">
-            <p>Terminal game made in ruby.</p>
+            <div class="container">
+              <h3>Terminal App</h3>
+              <img src="/assets/img/terminal_app_480_300.gif" alt="Picture of Terminal App">
+              <p>Terminal game made in ruby.</p>
+            </div>
           </div>
           <div class="project-item">
             <h3>Portfolio</h3>
@@ -71,7 +70,7 @@
             <img src="" alt="Picture of Train Tracker">
             <p>An offline public train tracker.</p>
           </div>
-          <div class="project-item">
+          <div class="project-item" id="project-countdown">
             <h3>Countdown</h3>
             <img src="" alt="Picture of Countdown">
             <p>Simple coutndown app with alarm</p>

@@ -37,35 +37,62 @@ nav {
   z-index: 999;
   background-color: $grey;
   height: 50px;
-
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.16), 0px 2px 10px 0 rgba(0, 0, 0, 0.12);
   .nav-bar-sticky {
     li {
       margin-top: 14.5px; // to center (better way??)
       display: inline-block;
       list-style: none;
-      width: 33%;
+      width: 33.333%;
       text-align: center;
       a {
         font-family: $header-font;
         color: $white;
         text-decoration: none;
       }
-      // &:visited {
-      //   color: $white;
-      // }
-      // &:link {
-      //   color: $white;
-      // }
+      #about-link {
+        &:hover {
+          color: $light-primary;
+          &:before {
+            position: absolute;
+            z-index: -1;
+            content: "About";
+            animation: glitchy 0.5s infinite;
+          }
+        }
+      }
+      #projects-link {
+        &:hover {
+          color: $light-primary;
+          &:before {
+            position: absolute;
+            z-index: -1;
+            content: "Projects";
+            animation: glitchy 0.5s infinite;
+          }
+        }
+      }
+      #contact-link {
+        &:hover {
+          color: $light-primary;
+          &:before {
+            position: absolute;
+            z-index: -1;
+            content: "Contact";
+            animation: glitchy 0.5s infinite;
+          }
+        }
+      }
     }  
   }
-    li:not(#about-link){
-      margin-left: -1em;
-    }
+  li:not(#about-link){
+    margin-left: -3px;
+  }
 }
 
 
 section {
-  min-height: 700px;
+  min-height: 100vh;
   // width: 90%;
   margin: 0 auto;
   padding-top: 50px;
@@ -74,14 +101,13 @@ section {
 section#landing {
   color: $white;
   min-height: 100vh;
-  width: 100%;
   background-color: $grey;
   .landing-container {
-    width: 75%;
+    width: 50%;
     margin: 0 auto;
     display: flex;
     flex-flow: column;
-  
+
     #title-header {
       z-index: 2;
       font-size: 3em;
@@ -121,22 +147,22 @@ section#landing {
 }
 
 section#about {
-  // height: 1400px;
   display: flex;
   flex-flow: row wrap;
   padding-top: 0;
 
   .col {
-    height: 700px;
+    height: inherit;
     width: 100%;
     padding-top: 50px;
+    padding-left: 4%;
+    padding-right: 4%;
   }
   
   // #about-content {
 
   // }
   #about-skills {
-    
     background-color: $grey;
     color: $white;
   }
@@ -146,6 +172,8 @@ section#about {
 section#projects {
   color: $white;
   background-color: $primary;
+  padding-left: 4%;
+  padding-right: 4%;
   .projects-container {
     // height: 700px;
     display: flex;
@@ -153,11 +181,19 @@ section#projects {
     justify-content: space-around;
     align-content: center;
     .project-item {
+      flex-basis: 320px;
+      height: 300px;
       text-align: center;
-      margin-top: 10px;
-      flex-basis: 300px;
+      margin-top: 40px;
       color: $grey;
       background-color: $light-primary;
+      box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.16), 0px 2px 10px 0 rgba(0, 0, 0, 0.12);
+      h3 {padding-top: 7.5%}
+      img {
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        width: 280px;
+      }
     }
   }
 }
@@ -231,13 +267,19 @@ footer {
   }
 }
 
-
-// @media only screen and (min-width: 480px) {
-
-// }
-// Desktop screen sizes
+// Large screen sizes
 @media only screen and (min-width: 768px) {
   .col {
     flex-basis: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+    .project-item {
+    flex-basis: 560px !important;
+    height: 510px !important;
+    img {
+      width: 480px !important;
+    }
   }
 }

@@ -73,13 +73,14 @@ nav {
   z-index: 999;
   background-color: #333333;
   height: 50px;
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.16), 0px 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 nav .nav-bar-sticky li {
   margin-top: 14.5px;
   display: inline-block;
   list-style: none;
-  width: 33%;
+  width: 33.333%;
   text-align: center;
 }
 
@@ -89,12 +90,45 @@ nav .nav-bar-sticky li a {
   text-decoration: none;
 }
 
+nav .nav-bar-sticky li #about-link:hover {
+  color: #C5EFF7;
+}
+
+nav .nav-bar-sticky li #about-link:hover:before {
+  position: absolute;
+  z-index: -1;
+  content: "About";
+  animation: glitchy 0.5s infinite;
+}
+
+nav .nav-bar-sticky li #projects-link:hover {
+  color: #C5EFF7;
+}
+
+nav .nav-bar-sticky li #projects-link:hover:before {
+  position: absolute;
+  z-index: -1;
+  content: "Projects";
+  animation: glitchy 0.5s infinite;
+}
+
+nav .nav-bar-sticky li #contact-link:hover {
+  color: #C5EFF7;
+}
+
+nav .nav-bar-sticky li #contact-link:hover:before {
+  position: absolute;
+  z-index: -1;
+  content: "Contact";
+  animation: glitchy 0.5s infinite;
+}
+
 nav li:not(#about-link) {
-  margin-left: -1em;
+  margin-left: -3px;
 }
 
 section {
-  min-height: 700px;
+  min-height: 100vh;
   margin: 0 auto;
   padding-top: 50px;
 }
@@ -102,12 +136,11 @@ section {
 section#landing {
   color: #fff;
   min-height: 100vh;
-  width: 100%;
   background-color: #333333;
 }
 
 section#landing .landing-container {
-  width: 75%;
+  width: 50%;
   margin: 0 auto;
   display: flex;
   flex-flow: column;
@@ -150,9 +183,11 @@ section#about {
 }
 
 section#about .col {
-  height: 700px;
+  height: inherit;
   width: 100%;
   padding-top: 50px;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 section#about #about-skills {
@@ -163,6 +198,8 @@ section#about #about-skills {
 section#projects {
   color: #fff;
   background-color: #39848D;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 section#projects .projects-container {
@@ -173,11 +210,23 @@ section#projects .projects-container {
 }
 
 section#projects .projects-container .project-item {
+  flex-basis: 320px;
+  height: 300px;
   text-align: center;
-  margin-top: 10px;
-  flex-basis: 300px;
+  margin-top: 40px;
   color: #333333;
   background-color: #C5EFF7;
+  box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.16), 0px 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+section#projects .projects-container .project-item h3 {
+  padding-top: 7.5%;
+}
+
+section#projects .projects-container .project-item img {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  width: 280px;
 }
 
 section#contact {
@@ -265,6 +314,16 @@ footer .copyright {
 @media only screen and (min-width: 768px) {
   .col {
     flex-basis: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .project-item {
+    flex-basis: 560px !important;
+    height: 510px !important;
+  }
+  .project-item img {
+    width: 480px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
