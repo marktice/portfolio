@@ -1,17 +1,38 @@
 @keyframes glitchy {
   0% {
-    transform: translate(-3px, 3px);
+    color: #39848D;
+    transform: translate(-5px, 5px);
+  }
+  12.5% {
+    color: #9D1840;
+    transform: translate(5px, 5px);
   }
   25% {
-    transform: translate(-3px, -3px);
+    color: #39848D;
+    transform: translate(-5px, -5px);
+  }
+  37.5% {
+    color: #9D1840;
+    transform: translate(5px, -5px);
   }
   50% {
-    transform: translate(3px, 3px);
+    color: #39848D;
+    transform: translate(5px, 5px);
+  }
+  62.5% {
+    color: #9D1840;
+    transform: translate(-5px, 5px);
   }
   75% {
-    transform: translate(3px, -3px);
+    color: #39848D;
+    transform: translate(5px, -5px);
+  }
+  87.5% {
+    color: #9D1840;
+    transform: translate(-5px, -5px);
   }
   100% {
-    transform: translate(-3px, 3px);
+    color: #39848D;
+    transform: translate(-5px, 5px);
   }
 }

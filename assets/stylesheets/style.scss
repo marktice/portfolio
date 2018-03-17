@@ -32,7 +32,6 @@ h1, h2, h3, h4, h5, h6 {
 
 nav {
   width: 100%;
-  // display: inline-block;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -74,55 +73,49 @@ section {
 
 section#landing {
   color: $white;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: $grey;
-  padding-right: 10%;
-  // z-index: 1;
-  #title-header {
-    z-index: 2;
-    font-size: 2.5em;
-    text-align: end;
-    position: absolute;
-    top: 25%;
-    right: 10%;
-    left: 0;
-    cursor: default;
-
-    &:hover {
-      &:before {
-        content: "Mark Tice";
-        position: absolute;
-        color: $primary;
-        z-index: -1;
-        animation: glitchy 0.3s ease 0.1s infinite;
-      }
-      &:after {
-        content: "Mark Tice";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -2;
-        color: $secondary;
-        animation: glitchy 0.3s ease infinite;
+  .landing-container {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+  
+    #title-header {
+      z-index: 2;
+      font-size: 3em;
+      text-align: end;
+      cursor: default;
+      &:hover {
+        &:before {
+          position: absolute;
+          z-index: -1;
+          animation: glitchy 0.5s infinite;
+          content: "Mark Tice";
+        }
       }
     }
+
+    .subtitle {
+      text-align: end;
+    }
   }
-  #subtitle-header {
-    position: absolute;
-    top: 35%;
-    right: 10%;
-  }
+
   #down-arrow {
     position: absolute;
     bottom: 5%;
     left: 50%;
     font-size: 2em;
     color: $white;
-    &:hover{
+    &:hover {
       color: $secondary;
+      // &:before {
+      //   position: absolute;
+      //   // z-index: -1;
+      //   animation: glitchy 0.5s infinite;
+      //   content: "^";
+      // }
     }
   }
 }
@@ -139,12 +132,12 @@ section#about {
     padding-top: 50px;
   }
   
-  #about-content {
+  // #about-content {
 
-  }
+  // }
   #about-skills {
     
-    background-color: $primary;
+    background-color: $grey;
     color: $white;
   }
 
@@ -170,7 +163,7 @@ section#projects {
 }
 
 section#contact {
-  background-color: $primary;
+  background-color: $secondary;
   height: 600px;
   padding-top: 50px;
   #contact-content {

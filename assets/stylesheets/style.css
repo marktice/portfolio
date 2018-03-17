@@ -1,18 +1,39 @@
 @keyframes glitchy {
   0% {
-    transform: translate(-3px, 3px);
+    color: #39848D;
+    transform: translate(-5px, 5px);
+  }
+  12.5% {
+    color: #9D1840;
+    transform: translate(5px, 5px);
   }
   25% {
-    transform: translate(-3px, -3px);
+    color: #39848D;
+    transform: translate(-5px, -5px);
+  }
+  37.5% {
+    color: #9D1840;
+    transform: translate(5px, -5px);
   }
   50% {
-    transform: translate(3px, 3px);
+    color: #39848D;
+    transform: translate(5px, 5px);
+  }
+  62.5% {
+    color: #9D1840;
+    transform: translate(-5px, 5px);
   }
   75% {
-    transform: translate(3px, -3px);
+    color: #39848D;
+    transform: translate(5px, -5px);
+  }
+  87.5% {
+    color: #9D1840;
+    transform: translate(-5px, -5px);
   }
   100% {
-    transform: translate(-3px, 3px);
+    color: #39848D;
+    transform: translate(-5px, 5px);
   }
 }
 
@@ -80,47 +101,34 @@ section {
 
 section#landing {
   color: #fff;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #333333;
-  padding-right: 10%;
 }
 
-section#landing #title-header {
+section#landing .landing-container {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+}
+
+section#landing .landing-container #title-header {
   z-index: 2;
-  font-size: 2.5em;
+  font-size: 3em;
   text-align: end;
-  position: absolute;
-  top: 25%;
-  right: 10%;
-  left: 0;
   cursor: default;
 }
 
-section#landing #title-header:hover:before {
-  content: "Mark Tice";
+section#landing .landing-container #title-header:hover:before {
   position: absolute;
-  color: #39848D;
   z-index: -1;
-  animation: glitchy 0.3s ease 0.1s infinite;
-}
-
-section#landing #title-header:hover:after {
+  animation: glitchy 0.5s infinite;
   content: "Mark Tice";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -2;
-  color: #9D1840;
-  animation: glitchy 0.3s ease infinite;
 }
 
-section#landing #subtitle-header {
-  position: absolute;
-  top: 35%;
-  right: 10%;
+section#landing .landing-container .subtitle {
+  text-align: end;
 }
 
 section#landing #down-arrow {
@@ -148,7 +156,7 @@ section#about .col {
 }
 
 section#about #about-skills {
-  background-color: #39848D;
+  background-color: #333333;
   color: #fff;
 }
 
@@ -173,7 +181,7 @@ section#projects .projects-container .project-item {
 }
 
 section#contact {
-  background-color: #39848D;
+  background-color: #9D1840;
   height: 600px;
   padding-top: 50px;
 }
