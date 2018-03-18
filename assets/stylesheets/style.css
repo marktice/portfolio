@@ -1,39 +1,54 @@
+@keyframes beat {
+  10% {
+    transform: scale(0.91);
+  }
+  17% {
+    transform: scale(0.98);
+  }
+  33% {
+    transform: scale(0.87);
+  }
+  45% {
+    transform: scale(1);
+  }
+}
+
 @keyframes glitchy {
   0% {
     color: #39848D;
-    transform: translate(-5px, 5px);
+    transform: translate(-2px, 2px);
   }
-  12.5% {
+  12% {
     color: #9D1840;
-    transform: translate(5px, 5px);
+    transform: translate(2px, 2px);
   }
   25% {
     color: #39848D;
-    transform: translate(-5px, -5px);
+    transform: translate(-2px, -2px);
   }
-  37.5% {
+  37% {
     color: #9D1840;
-    transform: translate(5px, -5px);
+    transform: translate(4px, -2px);
   }
   50% {
     color: #39848D;
-    transform: translate(5px, 5px);
+    transform: translate(4px, 2px);
   }
-  62.5% {
+  62% {
     color: #9D1840;
-    transform: translate(-5px, 5px);
+    transform: translate(-2px, 2px);
   }
   75% {
     color: #39848D;
-    transform: translate(5px, -5px);
+    transform: translate(2px, -2px);
   }
-  87.5% {
+  87% {
     color: #9D1840;
-    transform: translate(-5px, -5px);
+    transform: translate(-2px, -2px);
   }
   100% {
     color: #39848D;
-    transform: translate(-5px, 5px);
+    transform: translate(-2px, 2px);
   }
 }
 
@@ -145,7 +160,7 @@ section#landing {
 }
 
 section#landing .landing-container {
-  width: 50%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-flow: column;
@@ -161,7 +176,7 @@ section#landing .landing-container #title-header {
 section#landing .landing-container #title-header:hover:before {
   position: absolute;
   z-index: -1;
-  animation: glitchy 0.5s infinite;
+  animation: glitchy 0.4s ease 0.3s infinite;
   content: "Mark Tice";
 }
 
@@ -169,16 +184,18 @@ section#landing .landing-container .subtitle {
   text-align: end;
 }
 
-section#landing #down-arrow {
+section#landing .fa-angle-down {
+  font-size: 3em;
   position: absolute;
-  bottom: 5%;
   left: 50%;
-  font-size: 2em;
+  margin-left: -0.25em;
+  bottom: 5%;
   color: #fff;
+  animation: beat 2s ease-in-out infinite;
 }
 
-section#landing #down-arrow:hover {
-  color: #9D1840;
+section#landing .fa-angle-down:hover {
+  color: #39848D;
 }
 
 section#about {
