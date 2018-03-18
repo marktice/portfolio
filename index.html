@@ -34,21 +34,33 @@
         </nav>
 
       <section id="about">
-        <div class="col" id="about-content">
-          <h2>About</h2>
-          <p>Hi, I’m Mark and I’m a full-stack developer based in Melbourne, Australia. As of writing this bio I am honing my skills by studying full-time at Coder Academy.</p>
-          <p>I see every new experience as an opportunity to learn. Coming from a background in engineering i love problem solving and understanding the intricate nature of how things work.</p>
-          <p>My favorite projects are those that require me to push beyond my boundaries and acquire new skills and knowledge in order to succeed.</p>
-          <p>I'm passionate about quality clean code, best practices, and performance. </p>
-          <p>When I'm not behind a computer screen, I'm out there somewhere exploring, or at home gaming or reading.</p>
-        </div>
-        <div class="col skills" id="about-skills">
-          <h2>Coding</h2>
-          <p>Html, css, ruby, javascript</p>
-          <h2>Tools</h2>
-          <p>Git, Github, figma</p>
+        <!-- <div class="portait-container"> -->
+          <img id="portrait" src="/assets/img/imsta_bw.jpg" alt="Profile picture of Mark Tice">
+        <!-- </div> -->
+        <div class="about-container">
+          <div class="col" id="about-content">
+            <h2>About</h2>
+            <p>Hi, I’m Mark and I’m a full-stack developer based in Melbourne, Australia. I am currently honing my skills by studying full-time at Coder Academy Bootcamp.</p>
+            <br>
+            <p>I see every new experience as an opportunity to learn. Coming from a background in engineering i love problem solving and understanding the intricate nature of how things work.</p>
+            <br>
+            <p>My favorite projects are those that require me to push beyond my boundaries and acquire new skills and knowledge in order to succeed.</p>
+            <br>
+            <p>I'm passionate about quality clean code, best practices, and optimization.</p>
+            <br>
+            <p>When I'm not behind a computer screen (rare), I'm out hiking, sailing, or maybe just at home playing a game or reading.</p>
+          </div>
+          <div class="col skills" id="about-skills">
+            <h2>Coding</h2>
+            <p>Html, css, ruby, javascript</p>
+            <br>
+            <h2>Tools</h2>
+            <p>Git, Github, figma</p>
+          </div>
         </div>
       </section>
+
+      <div class="divider"></div>
 
       <section id="projects">
         <h2>Projects</h2>
@@ -76,17 +88,24 @@
         </div>
       </section>
 
+      <div class="divider"></div>
+
       <section id="contact">
-        <div class="col" id="contact-content">
-          <h2>Contact</h2>
-          <!-- <p>Fill out the form to send me a message</p> -->
+        <div class="contact-wrapper">
+          <div class="col" id="contact-content">
+            <h2>Contact</h2>
+            <p>Have a comment or inquiry? Send a brief message and i'll get back to you.<br>You can also reach on my
+              <a href="https://www.linkedin.com/in/mark-tice-369570158/" id="linkdin" target="_blank">Linkedin</a> & <a href="https://github.com/marktice" id="github" target="_blank">Github</a>.
+              <br>Thanks for stopping by!</p>
+            <!-- <img src="/assets/img/profile_sf_square.jpg" alt="Me in San Fran" id="san-fran-img"> -->
+          </div>
+          <form class="col" action="#about" method="get">
+            <input type="text" name="name" id="contact-name" placeholder="NAME">
+            <input type="email" name="email" id="contact-email" placeholder="E-MAIL">
+            <textarea name="message" id="contact-message" placeholder="MESSAGE"></textarea>
+            <input type="submit" value="SEND" id="contact-submit">
+          </form>
         </div>
-        <form class="col" action="#about" method="get">
-          <input type="text" name="name" id="contact-name" placeholder="NAME">
-          <input type="email" name="email" id="contact-email" placeholder="E-MAIL">
-          <textarea name="message" id="contact-message" placeholder="MESSAGE"></textarea>
-          <input type="submit" value="SEND" id="contact-submit">
-        </form>
       </section>
     </main>
 
@@ -98,7 +117,7 @@
         <a href="#top"><i class="fas fa-angle-up"></i></a>
       </div>
       <div class="copyright">
-        <span>Designed and constructed by Mark Tice</span>
+          <i class="fas fa-cog fa-spin"></i><span> Designed and constructed by Mark Tice</span>
       </div>
     </footer>
   </div>

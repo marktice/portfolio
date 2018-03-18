@@ -98,6 +98,11 @@ section {
   padding-top: 50px;
 }
 
+.divider {
+  height: 100px;
+  border: 5px solid black;
+}
+
 section#landing {
   color: $white;
   min-height: 100vh;
@@ -147,16 +152,30 @@ section#landing {
 }
 
 section#about {
-  display: flex;
-  flex-flow: row wrap;
+
   padding-top: 0;
 
+  // .portrait-container {
+  //   display: block;
+  //   margin: 0 auto;
+  // }
+  img#portrait {
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+    // padding-bottom: 5px;
+    width: 200px;
+  }
+  .about-container {
+    display: flex;
+    flex-flow: row wrap;
+  }
   .col {
-    height: inherit;
+    min-height: 100vh;
     width: 100%;
     padding-top: 50px;
-    padding-left: 4%;
-    padding-right: 4%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   
   // #about-content {
@@ -172,8 +191,8 @@ section#about {
 section#projects {
   color: $white;
   background-color: $primary;
-  padding-left: 4%;
-  padding-right: 4%;
+  padding-left: 5%;
+  padding-right: 5%;
   .projects-container {
     // height: 700px;
     display: flex;
@@ -200,14 +219,29 @@ section#projects {
 }
 
 section#contact {
-  background-color: $secondary;
-  color: $white;
-  height: 600px;
+  background-color: $white;
+  color: $grey;
+  min-height: 600px;
   padding-top: 50px;
-
-  form {
-    width: 75%;
+  .contact-wrapper {
+    width: 90%;
     margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  // .col {
+    // margin: 0 5%;
+  // }
+  #contact-content {
+    padding-right: 10%;
+    img {
+      width: 300px;
+    }
+  }
+  form {
+    width: 100%;
+    margin: auto;
     padding-top: 1em;
     display: flex;
     flex-direction: column;
@@ -269,14 +303,14 @@ footer {
 // Large screen sizes
 @media only screen and (min-width: 768px) {
   .col {
-    flex-basis: 50%;
+    flex-basis: 50% !important;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-    .project-item {
-    flex-basis: 560px !important;
-    height: 510px !important;
+  .project-item {
+  flex-basis: 560px !important;
+  height: 510px !important;
     img {
       width: 480px !important;
     }
