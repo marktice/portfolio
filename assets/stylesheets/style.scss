@@ -198,18 +198,27 @@ section#landing {
 section#about {
   padding-top: 0;
   min-height: 100vh;
+  position: relative;
 
-  // .portrait-container {
-  //   display: block;
+  // #portrait-container {
+  //   z-index: 1;
+  //   position: relative;
+  //   top: 50px;
+  //   left: 0;
+  //   right: 0;
   //   margin: 0 auto;
+  //   padding: 20px 0;
   // }
-  img#portrait {
-    display: block;
-    margin: 0 auto;
-    padding-top: 50px;
-    // padding-bottom: 5px;
-    width: 200px;
-  }
+  
+    #portrait-img {
+      width: 200px;
+      position: absolute;
+      top: 50px;
+      left: 10%; //fallback
+      left: calc(50% - 100px); //for center
+      // height: 175px;
+      border-radius: 50%;
+    }
   hr {
     margin-bottom: 1em;
   }
@@ -219,10 +228,12 @@ section#about {
   }
   .col {
     width: 100%;
-    padding-top: 50px;
+    // padding-top: 50px;
+    padding-top: 300px;
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 100px;
+    // margin: auto 0;
   }
   
   // #about-content {
@@ -260,6 +271,7 @@ section#projects {
       color: $white;
       background-color: darken($color: $primary, $amount: 10%);
       box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.16), 0px 2px 10px 0 rgba(0, 0, 0, 0.12);
+      h3 {font-family: $content-font}
       p {font-size: 0.875em}
       img {
         padding-top: 1em;
