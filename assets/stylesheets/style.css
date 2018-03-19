@@ -156,7 +156,8 @@ section#landing {
 }
 
 section#landing .landing-container {
-  margin-left: 30%;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 section#landing .landing-container #title-header {
@@ -177,18 +178,20 @@ section#landing .landing-container .dev-subtitle {
   color: #39848D;
   font-family: Montserrat, "Source Code Pro", monospace;
   font-size: 1.25em;
+  text-align: end;
 }
 
 section#landing .landing-container .engineer-subtitle {
-  margin-top: 0.25em;
   color: #9D1840;
   font-family: Montserrat, "Source Code Pro", monospace;
   font-size: 1.25em;
+  text-align: end;
 }
 
 section#landing .landing-container hr {
-  margin: 1em 0;
-  width: 60%;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  width: 100%;
 }
 
 section#landing .landing-container blockquote {
@@ -412,6 +415,21 @@ footer .copyright {
 }
 
 @media only screen and (min-width: 768px) {
+  #landing #title-header {
+    font-size: 5em !important;
+  }
+  #landing .dev-subtitle {
+    font-size: 2em !important;
+  }
+  #landing .engineer-subtitle {
+    font-size: 2em !important;
+  }
+  #landing blockquote {
+    font-size: 1em;
+  }
+  #landing #down-arrow {
+    font-size: initial;
+  }
   .col {
     flex-basis: 50% !important;
   }
