@@ -294,6 +294,9 @@ section#contact {
         background-color: $secondary;
       }
     }
+    .hidden {
+      display: none;
+    }
   }
   a#top {
     margin: auto;
@@ -341,7 +344,9 @@ footer {
 @media only screen and (min-width: 768px) {
   .col {
     flex-basis: 50% !important;
-    min-height: 100vh !important;    
+  }
+  .about-container .col {
+    min-height: 100vh !important;
   }
   .project-item {
     flex-basis: 45% !important;
