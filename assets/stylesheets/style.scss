@@ -117,10 +117,6 @@ nav {
       }
     }  
   }
-  // li:not(#about-link){
-  //   margin-left: -3px;
-  // }
-
 }
 
 
@@ -256,7 +252,7 @@ section#projects {
       color: $white;
       background-color: darken($color: $primary, $amount: 10%);
       box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.16), 0px 2px 10px 0 rgba(0, 0, 0, 0.12);
-      h3 {font-family: $content-font}
+      // h3 {font-family: $content-font}
       p {font-size: 0.875em}
       img {
         padding-top: 1em;
@@ -281,9 +277,6 @@ section#contact {
   hr {
     margin-bottom: 1em;
   }
-  // .col {
-    // margin: 0 5%;
-  // }
   #contact-content {
     padding-right: 10%;
     a {
@@ -331,8 +324,7 @@ section#contact {
       display: none;
     }
   }
-  a#top {
-    margin: auto;
+  a#up-button { 
     .fa-angle-up {
       color: $grey;
       font-size: 1.5em;
@@ -348,7 +340,6 @@ section#contact {
 
 footer {
   background-color: $grey;
-  // height: 100px;
   min-height: 15vh;
   .social-container {
     display: flex;

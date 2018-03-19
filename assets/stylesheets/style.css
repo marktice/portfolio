@@ -322,10 +322,6 @@ section#projects .projects-container .project-item {
   box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.16), 0px 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-section#projects .projects-container .project-item h3 {
-  font-family: Montserrat, "Source Code Pro", monospace;
-}
-
 section#projects .projects-container .project-item p {
   font-size: 0.875em;
 }
@@ -411,17 +407,13 @@ section#contact form .hidden {
   display: none;
 }
 
-section#contact a#top {
-  margin: auto;
-}
-
-section#contact a#top .fa-angle-up {
+section#contact a#up-button .fa-angle-up {
   color: #333333;
   font-size: 1.5em;
   animation: beat 3s ease infinite;
 }
 
-section#contact a#top .fa-angle-up:hover {
+section#contact a#up-button .fa-angle-up:hover {
   color: #39848D;
 }
 

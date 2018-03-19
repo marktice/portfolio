@@ -1,7 +1,6 @@
 # My Portfolio Website
-www.marktice.com
-
-
+www.marktice.netlify.com
+<!-- www.marktice.com -->
 
 ## Trello board
 https://trello.com/b/rGtrOlwG/portfolio
@@ -17,6 +16,7 @@ My MVP was created very early in the process, before much effort was put into co
 <!-- Websites i liked, flow etc -->
 ### Typography
 
+
 ## Style Guide and Wireframes
 Colors scheme was achieved from extracting colors from my inspiration pictures. 
 
@@ -27,7 +27,7 @@ https://www.figma.com/file/ZxlQ8AjN9M7vi6mOKHSyTmj0/Porfolio
 
 
 ## Coding
-I coded parts of my project while i went along to assure want i wanted to achieve was actually achievable. This can be seen from my codepen progress but also from my github commits. 
+I coded parts of my project while i went along to assure want i wanted to achieve was actually achievable. This can be seen from my github commits which date back to very early on, but also from my codepen progress for a few items. 
 
 ## Tools
 ### SASS
@@ -37,13 +37,13 @@ I coded parts of my project while i went along to assure want i wanted to achiev
 ### Sitemap Generator
 
 ### Personalized Domain Name
-I bought the domain www.marktice.com
+<!-- I bought the domain www.marktice.com -->
 
 ### Social Media Debuggers
 Facebook, Twitshot
 
-## Optimisation
-Optimized images using: 
+### Optimisation
+Optimized images using: image optim app
 Optimized CSS using: https://www.npmjs.com/package/minifier
 
 ## Testing
