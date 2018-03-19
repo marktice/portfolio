@@ -102,16 +102,20 @@ section#landing {
   color: $white;
   min-height: 100vh;
   background-color: $grey;
+  padding-top: 20%;
+
   .landing-container {
+    margin-left: 25%;
     width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: column;
+    // z-index: 1;
+    // margin: 0 auto;
+    // display: flex;
+    // flex-flow: column;
 
     #title-header {
-      z-index: 2;
       font-size: 3em;
-      text-align: end;
+      z-index: 10;
+      position: relative;
       cursor: default;
       &:hover {
         &:before {
@@ -123,16 +127,28 @@ section#landing {
       }
     }
 
-    .subtitle {
-      text-align: end;
+    .dev-subtitle {
+      color: $primary;
+      font-family: $content-font;
+    }
+    .engineer-subtitle {
+      margin-top: 0.25em;
+      color: $secondary;
+      font-family: $content-font;
+    }
+    hr {
+      margin: 1em 0;
+    }
+    blockquote {
+      font-size: 0.75em;
     }
   }
 
-  img {
-    width: 100px;
-    position: absolute;
-    right: 45%;
-  }
+  // img {
+  //   width: 100px;
+  //   position: absolute;
+  //   right: 45%;
+  // }
   .fa-angle-down {
     font-size: 3em;
     position: absolute;

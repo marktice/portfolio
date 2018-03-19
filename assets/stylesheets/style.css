@@ -152,19 +152,18 @@ section#landing {
   color: #fff;
   min-height: 100vh;
   background-color: #333333;
+  padding-top: 20%;
 }
 
 section#landing .landing-container {
+  margin-left: 25%;
   width: 90%;
-  margin: 0 auto;
-  display: flex;
-  flex-flow: column;
 }
 
 section#landing .landing-container #title-header {
-  z-index: 2;
   font-size: 3em;
-  text-align: end;
+  z-index: 10;
+  position: relative;
   cursor: default;
 }
 
@@ -175,14 +174,23 @@ section#landing .landing-container #title-header:hover:before {
   content: "Mark Tice";
 }
 
-section#landing .landing-container .subtitle {
-  text-align: end;
+section#landing .landing-container .dev-subtitle {
+  color: #39848D;
+  font-family: Montserrat, "Source Code Pro", monospace;
 }
 
-section#landing img {
-  width: 100px;
-  position: absolute;
-  right: 45%;
+section#landing .landing-container .engineer-subtitle {
+  margin-top: 0.25em;
+  color: #9D1840;
+  font-family: Montserrat, "Source Code Pro", monospace;
+}
+
+section#landing .landing-container hr {
+  margin: 1em 0;
+}
+
+section#landing .landing-container blockquote {
+  font-size: 0.75em;
 }
 
 section#landing .fa-angle-down {
