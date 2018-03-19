@@ -67,8 +67,10 @@ nav {
   }
 
   #main-nav {
+    padding: 0 2em;
+    float: right;
     li {
-      float: right;
+      display: inline;
       list-style: none;
       text-align: center;
       margin-left: 20px;
@@ -103,7 +105,6 @@ nav {
         }
       }
       #contact-link {
-        margin-right: 25px;        
         &:hover {
           color: $light-primary;
           &:before {
@@ -205,7 +206,6 @@ section#about {
     top: 50px;
     left: 10%; //fallback
     left: calc(50% - 100px); //for center
-    // height: 175px;
     border-radius: 50%;
   }
   hr {
@@ -221,7 +221,6 @@ section#about {
     padding-right: 5%;
     padding-bottom: 100px;
   }
-  
   #about-content {
     padding-top: 300px;    
   }
@@ -230,7 +229,6 @@ section#about {
     background-color: $grey;
     color: $white;
   }
-
 }
 
 section#projects {
@@ -375,31 +373,30 @@ footer {
   }
 }
 
-@media only screen and (max-width: 767px) {
+// MEDIA QUERIES
+// Widescreen
+@media only screen and (max-width: 600px) {
   #logo {
     display: none;
   }
   #main-nav {
+    padding: 0 1em !important;
+    float: none !important;
     li {
-      float: none !important;
-      display: inline;
+      margin-left: 0 !important;
+      a {
+        padding: 15px 5px !important;
+      }
+    }
+    #about-list {
+      float: left;
+    }
+    #contact-list {
+      float: right;
     }
   }
-  #about-link {
-    margin-left: 25px;
-    float: left;
-  }
-  #contact-link {
-    float: right;
-  }
-  #project-link {
-    // margin: 50px 0;
-  }
-
 }
 
-// MEDIA QUERIES
-// Widescreen
 @media only screen and (min-width: 768px) {
   #landing {
     #title-header {font-size: 5em !important}

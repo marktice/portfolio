@@ -119,8 +119,13 @@ nav div#logo a:hover:before {
   animation: glitchy 0.5s infinite;
 }
 
-nav #main-nav li {
+nav #main-nav {
+  padding: 0 2em;
   float: right;
+}
+
+nav #main-nav li {
+  display: inline;
   list-style: none;
   text-align: center;
   margin-left: 20px;
@@ -155,10 +160,6 @@ nav #main-nav li #projects-link:hover:before {
   z-index: -1;
   content: "Projects";
   animation: glitchy 0.5s infinite;
-}
-
-nav #main-nav li #contact-link {
-  margin-right: 25px;
 }
 
 nav #main-nav li #contact-link:hover {
@@ -455,19 +456,24 @@ footer .copyright {
   font-size: 0.75em;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
   #logo {
     display: none;
   }
-  #main-nav li {
+  #main-nav {
+    padding: 0 1em !important;
     float: none !important;
-    display: inline;
   }
-  #about-link {
-    margin-left: 25px;
+  #main-nav li {
+    margin-left: 0 !important;
+  }
+  #main-nav li a {
+    padding: 15px 5px !important;
+  }
+  #main-nav #about-list {
     float: left;
   }
-  #contact-link {
+  #main-nav #contact-list {
     float: right;
   }
 }
