@@ -275,13 +275,17 @@ section#about .about-container {
 
 section#about .col {
   width: 100%;
-  padding-top: 300px;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 100px;
 }
 
+section#about #about-content {
+  padding-top: 300px;
+}
+
 section#about #about-skills {
+  padding-top: 100px;
   background-color: #333333;
   color: #fff;
 }
@@ -488,6 +492,7 @@ footer .copyright {
     flex-basis: 50% !important;
   }
   .about-container .col {
+    padding-top: 300px !important;
     min-height: 100vh !important;
   }
   .project-item {
