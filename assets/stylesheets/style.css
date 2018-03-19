@@ -234,7 +234,7 @@ section#projects {
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 75px;
-  padding-bottom: 100px;
+  padding-bottom: 120px;
   text-align: center;
 }
 
@@ -403,9 +403,6 @@ footer .copyright {
   #projects {
     padding-left: 10% !important;
     padding-right: 10% !important;
-  }
-  #projects .project-item {
-    flex-basis: 45% !important;
   }
   .contact-wrapper {
     width: 80% !important;
