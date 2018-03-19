@@ -135,7 +135,14 @@ section#landing {
       width: 60%;
     }
     blockquote {
+      border-left: 3px solid $white;
       font-size: 0.75em;
+      p {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+
+      }
     }
   }
   .fa-angle-down {
@@ -153,8 +160,8 @@ section#landing {
 }
 
 section#about {
-
   padding-top: 0;
+  min-height: 100vh;
 
   // .portrait-container {
   //   display: block;
@@ -167,16 +174,20 @@ section#about {
     // padding-bottom: 5px;
     width: 200px;
   }
+  hr {
+    margin-bottom: 1em;
+  }
   .about-container {
     display: flex;
     flex-flow: row wrap;
   }
   .col {
-    min-height: 100vh;
+    // min-height: 600px;
     width: 100%;
     padding-top: 50px;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 100px;
   }
   
   // #about-content {
@@ -235,7 +246,9 @@ section#contact {
     display: flex;
     flex-flow: row wrap;
   }
-
+  hr {
+    margin-bottom: 1em;
+  }
   // .col {
     // margin: 0 5%;
   // }

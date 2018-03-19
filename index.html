@@ -21,7 +21,7 @@
           <h4 class="dev-subtitle">Fullstack Dev</h4>
           <h4 class="engineer-subtitle">& Engineer</h4>
           <hr>
-          <blockquote>"I dwell in possibility" - Emily Dickinson</blockquote>
+          <blockquote><p>"I dwell in possibility" - Emily Dickinson</p></blockquote>
         </div>
         <a href="#about" id="down-arrow"><i class="fas fa-angle-down"></i></a>
       </section>
@@ -42,6 +42,7 @@
         <div class="about-container">
           <div class="col" id="about-content">
             <h2>About</h2>
+            <hr>
             <p>Hi, I’m Mark and I’m a full-stack developer based in Melbourne, Australia. I am currently honing my skills by studying full-time at Coder Academy Bootcamp.</p>
             <br>
             <p>I see every new experience as an opportunity to learn. Coming from a background in engineering i love problem solving and understanding the intricate nature of how things work.</p>
@@ -54,13 +55,15 @@
           </div>
           <div class="col skills" id="about-skills">
             <h2>Coding Skills</h2>
-            <p>HTML5, CSS3, SASS<br/>
+            <hr>
+            <p>HTML5, CSS3, SASS<br/><br/>
 
-                JavaScript, NoSQL, MongoDB, Express, React, Node.js, Redux, Webpack<br/>
+                JavaScript, NoSQL, MongoDB, Express, React, Node.js, Redux, Webpack<br/><br>
                 
                 Ruby, Ruby on Rails</p>
             <br>
             <h2>Tools</h2>
+            <hr>
             <p>Git, Github, Heroku, Stack Overflow, Figma</p>
           </div>
         </div>
@@ -96,12 +99,12 @@
         <div class="contact-wrapper">
           <div class="col" id="contact-content">
             <h2>Contact</h2>
-            <p>Have a comment or inquiry? Send a brief message and i'll get back to you.<br>You can also reach me on
-              <a href="https://www.linkedin.com/in/mark-tice-369570158/" id="linkdin" target="_blank">Linkedin</a> & <a href="https://github.com/marktice" id="github" target="_blank">Github</a>.
+            <hr>
+            <p>Have a comment or inquiry?<br/>Send a brief message and i'll get back to you.<br>You can also reach me on <a href="https://www.linkedin.com/in/mark-tice-369570158/" id="linkdin" target="_blank">Linkedin</a> & <a href="https://github.com/marktice" id="github" target="_blank">Github</a>.
               <br>Thanks for stopping by!</p>
             <!-- <img src="/assets/img/profile_sf_square.jpg" alt="Me in San Fran" id="san-fran-img"> -->
           </div>
-          <form class="col" action="#about" method="get">
+          <form class="col" name="contact" method="POST" netlify>
             <input type="text" name="name" id="contact-name" placeholder="NAME">
             <input type="email" name="email" id="contact-email" placeholder="E-MAIL">
             <textarea name="message" id="contact-message" placeholder="MESSAGE"></textarea>
