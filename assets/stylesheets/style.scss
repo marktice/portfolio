@@ -81,38 +81,9 @@ nav {
         font-family: $content-font;
         color: $white;
         text-decoration: none;
-      }
-      #about-link {
         &:hover {
-          color: $light-primary;
-          &:before {
-            position: absolute;
-            z-index: -1;
-            content: "About";
-            animation: glitchy 0.5s infinite;
-          }
-        }
-      }
-      #projects-link {
-        &:hover {
-          color: $light-primary;
-          &:before {
-            position: absolute;
-            z-index: -1;
-            content: "Projects";
-            animation: glitchy 0.5s infinite;
-          }
-        }
-      }
-      #contact-link {
-        &:hover {
-          color: $light-primary;
-          &:before {
-            position: absolute;
-            z-index: -1;
-            content: "Contact";
-            animation: glitchy 0.5s infinite;
-          }
+          color: $white;
+          background-color: $primary;
         }
       }
     }  

@@ -140,37 +140,9 @@ nav #main-nav li a {
   text-decoration: none;
 }
 
-nav #main-nav li #about-link:hover {
-  color: #C5EFF7;
-}
-
-nav #main-nav li #about-link:hover:before {
-  position: absolute;
-  z-index: -1;
-  content: "About";
-  animation: glitchy 0.5s infinite;
-}
-
-nav #main-nav li #projects-link:hover {
-  color: #C5EFF7;
-}
-
-nav #main-nav li #projects-link:hover:before {
-  position: absolute;
-  z-index: -1;
-  content: "Projects";
-  animation: glitchy 0.5s infinite;
-}
-
-nav #main-nav li #contact-link:hover {
-  color: #C5EFF7;
-}
-
-nav #main-nav li #contact-link:hover:before {
-  position: absolute;
-  z-index: -1;
-  content: "Contact";
-  animation: glitchy 0.5s infinite;
+nav #main-nav li a:hover {
+  color: #fff;
+  background-color: #39848D;
 }
 
 section {
