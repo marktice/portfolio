@@ -42,7 +42,7 @@ nav {
 
   position: sticky;
   box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.16), 0px 2px 10px 0 rgba(0, 0, 0, 0.12);
-  
+
   div#logo {
     margin-left: 25px;
     float: left;
@@ -374,6 +374,28 @@ footer {
     text-align: center;
     color: $white;
     font-size: 0.75em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #logo {
+    display: none;
+  }
+  #main-nav {
+    li {
+      float: none !important;
+      display: inline;
+    }
+  }
+  #about-link {
+    margin-left: 25px;
+    float: left;
+  }
+  #contact-link {
+    float: right;
+  }
+  #project-link {
+    // margin: 50px 0;
   }
 }
 

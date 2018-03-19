@@ -451,6 +451,23 @@ footer .copyright {
   font-size: 0.75em;
 }
 
+@media only screen and (max-width: 767px) {
+  #logo {
+    display: none;
+  }
+  #main-nav li {
+    float: none !important;
+    display: inline;
+  }
+  #about-link {
+    margin-left: 25px;
+    float: left;
+  }
+  #contact-link {
+    float: right;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   #landing #title-header {
     font-size: 5em !important;
