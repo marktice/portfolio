@@ -1,12 +1,12 @@
 @keyframes beat {
   10% {
-    transform: scale(.91);
+    transform: scale(.87);
   }
   17% {
-    transform: scale(.98);
+    transform: scale(.97);
   }
   33% {
-    transform: scale(.87);
+    transform: scale(.82);
   }
   45% {
     transform: scale(1);
@@ -16,11 +16,11 @@
 @keyframes glitchy {
   0% {
     color: #39848D;
-    transform: translate(-2px, 2px);
+    transform: translate(-2px, 4px);
   }
   12% {
     color: #9D1840;
-    transform: translate(2px, 2px);
+    transform: translate(2px, 4px);
   }
   25% {
     color: #39848D;

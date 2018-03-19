@@ -1,12 +1,12 @@
 @keyframes beat {
   10% {
-    transform: scale(0.91);
+    transform: scale(0.87);
   }
   17% {
-    transform: scale(0.98);
+    transform: scale(0.97);
   }
   33% {
-    transform: scale(0.87);
+    transform: scale(0.82);
   }
   45% {
     transform: scale(1);
@@ -16,11 +16,11 @@
 @keyframes glitchy {
   0% {
     color: #39848D;
-    transform: translate(-2px, 2px);
+    transform: translate(-2px, 4px);
   }
   12% {
     color: #9D1840;
-    transform: translate(2px, 2px);
+    transform: translate(2px, 4px);
   }
   25% {
     color: #39848D;
@@ -184,6 +184,12 @@ section#landing .landing-container .subtitle {
   text-align: end;
 }
 
+section#landing img {
+  width: 100px;
+  position: absolute;
+  right: 45%;
+}
+
 section#landing .fa-angle-down {
   font-size: 3em;
   position: absolute;
@@ -283,14 +289,18 @@ section#contact #contact-content {
   padding-right: 10%;
 }
 
-section#contact #contact-content img {
-  width: 300px;
+section#contact #contact-content a:link {
+  color: #39848D;
+}
+
+section#contact #contact-content a:visited {
+  color: #9D1840;
 }
 
 section#contact form {
   width: 100%;
   margin: auto;
-  padding-top: 1em;
+  padding-top: 2em;
   display: flex;
   flex-direction: column;
 }
@@ -301,6 +311,7 @@ section#contact form input, section#contact form textarea {
   padding: 1em;
   transition: all 0.5s ease-in-out;
   margin-bottom: 3px;
+  border: 1px solid #333333;
 }
 
 section#contact form input:hover, section#contact form input:focus, section#contact form textarea:hover, section#contact form textarea:focus {
@@ -325,6 +336,20 @@ section#contact form input#contact-submit:disabled {
 
 section#contact form input#contact-submit:hover {
   background-color: #9D1840;
+}
+
+section#contact a#top {
+  margin: auto;
+}
+
+section#contact a#top .fa-angle-up {
+  color: #333333;
+  font-size: 1.5em;
+  animation: beat 3s ease infinite;
+}
+
+section#contact a#top .fa-angle-up:hover {
+  color: #39848D;
 }
 
 footer {

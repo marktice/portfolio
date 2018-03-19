@@ -133,6 +133,11 @@ section#landing {
     }
   }
 
+  img {
+    width: 100px;
+    position: absolute;
+    right: 45%;
+  }
   .fa-angle-down {
     font-size: 3em;
     position: absolute;
@@ -231,14 +236,19 @@ section#contact {
   // }
   #contact-content {
     padding-right: 10%;
-    img {
-      width: 300px;
+    a {
+      &:link {
+        color: $primary;
+      }
+      &:visited {
+        color: $secondary;
+      }
     }
   }
   form {
     width: 100%;
     margin: auto;
-    padding-top: 1em;
+    padding-top: 2em;
     display: flex;
     flex-direction: column;
     input, textarea {
@@ -248,6 +258,7 @@ section#contact {
       transition: all 0.5s ease-in-out;
       margin-bottom: 3px;
       // background-color: $light-primary;
+      border: 1px solid $grey;
       &:hover, &:focus {
         background-color: $white;
         color: $grey;
@@ -267,6 +278,18 @@ section#contact {
       }
     }
   }
+  a#top {
+    margin: auto;
+    .fa-angle-up {
+      color: $grey;
+      font-size: 1.5em;
+      animation: beat 3s ease infinite;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
 }
 
 
