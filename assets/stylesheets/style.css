@@ -152,12 +152,11 @@ section#landing {
   color: #fff;
   min-height: 100vh;
   background-color: #333333;
-  padding-top: 20%;
+  padding-top: 150px;
 }
 
 section#landing .landing-container {
-  margin-left: 25%;
-  width: 90%;
+  margin-left: 30%;
 }
 
 section#landing .landing-container #title-header {
@@ -177,16 +176,19 @@ section#landing .landing-container #title-header:hover:before {
 section#landing .landing-container .dev-subtitle {
   color: #39848D;
   font-family: Montserrat, "Source Code Pro", monospace;
+  font-size: 1.25em;
 }
 
 section#landing .landing-container .engineer-subtitle {
   margin-top: 0.25em;
   color: #9D1840;
   font-family: Montserrat, "Source Code Pro", monospace;
+  font-size: 1.25em;
 }
 
 section#landing .landing-container hr {
   margin: 1em 0;
+  width: 60%;
 }
 
 section#landing .landing-container blockquote {
@@ -399,9 +401,6 @@ footer .copyright {
 }
 
 @media only screen and (min-width: 1200px) {
-  .landing-container {
-    width: 80% !important;
-  }
   .about-container .col:first-of-type {
     padding-left: 10% !important;
   }
