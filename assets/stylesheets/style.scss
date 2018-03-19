@@ -237,7 +237,7 @@ section#projects {
 section#contact {
   background-color: $white;
   color: $grey;
-  min-height: 600px;
+  min-height: 80vh;
   padding-top: 50px;
   .contact-wrapper {
     width: 90%;
@@ -315,7 +315,8 @@ section#contact {
 
 footer {
   background-color: $grey;
-  height: 100px;
+  // height: 100px;
+  min-height: 15vh;
   .social-container {
     display: flex;
     height: 50px;
