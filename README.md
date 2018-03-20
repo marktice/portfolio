@@ -35,12 +35,17 @@ I coded parts of my project while i went along to assure want i wanted to achiev
 ### Google Analytics
 
 ### Sitemap Generator
+https://www.xml-sitemaps.com/
 
 ### Personalized Domain Name
 <!-- I bought the domain www.marktice.com -->
 
 ### Social Media Debuggers
-Facebook, Twitshot
+The facebook debugger tool allowed me to test how my site looked when shared.
+https://developers.facebook.com/tools/debug/
+
+Twitshot allowed me to test how my image for twitter came accross.
+http://www.twitshot.com/
 
 ### Optimisation
 Optimized images using: image optim app
