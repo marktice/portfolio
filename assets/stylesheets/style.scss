@@ -167,6 +167,9 @@ section#about {
   padding-top: 0;
   min-height: 100vh;
   position: relative;
+  p {
+    margin-bottom: 1em;
+  }
   #portrait-img {
     width: 200px;
     position: absolute;
@@ -252,6 +255,9 @@ section#contact {
     display: flex;
     flex-flow: row wrap;
   }
+  p {
+    margin-bottom: 1em;
+  }
   hr {
     margin-bottom: 1em;
   }
@@ -270,6 +276,7 @@ section#contact {
     width: 100%;
     margin: auto;
     padding-top: 2em;
+    padding-bottom: 2em;
     display: flex;
     flex-direction: column;
     input, textarea {
@@ -278,7 +285,6 @@ section#contact {
       padding: 1em;
       transition: all 0.5s ease-in-out;
       margin-bottom: 3px;
-      // background-color: $light-primary;
       border: 1px solid $grey;
       &:hover, &:focus {
         background-color: $white;
@@ -295,7 +301,7 @@ section#contact {
       cursor: pointer;
       &:disabled { opacity: 0.5; }
       &:hover {
-        background-color: $secondary;
+        background-color: $primary;
       }
     }
     .hidden {
@@ -313,13 +319,10 @@ footer {
     ". copyr copyr up"; 
   justify-items: center;
   align-items: center;
-
   background-color: $grey;
   min-height: 15vh;
-
   .social-container {
     grid-area: social;
-
     height: 50px;
     width: 100%;
     display: flex;
@@ -340,14 +343,12 @@ footer {
   }
   .copyright {
     grid-area: copyr;
-
     text-align: center;
     color: $white;
     font-size: 0.75em;
   }
   a#up-button { 
     grid-area: up;
-
     .fa-angle-up {
       color: $white;
       font-size: 3em;

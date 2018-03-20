@@ -228,6 +228,10 @@ section#about {
   position: relative;
 }
 
+section#about p {
+  margin-bottom: 1em;
+}
+
 section#about #portrait-img {
   width: 200px;
   position: absolute;
@@ -323,6 +327,10 @@ section#contact .contact-wrapper {
   flex-flow: row wrap;
 }
 
+section#contact p {
+  margin-bottom: 1em;
+}
+
 section#contact hr {
   margin-bottom: 1em;
 }
@@ -343,6 +351,7 @@ section#contact form {
   width: 100%;
   margin: auto;
   padding-top: 2em;
+  padding-bottom: 2em;
   display: flex;
   flex-direction: column;
 }
@@ -377,7 +386,7 @@ section#contact form input#contact-submit:disabled {
 }
 
 section#contact form input#contact-submit:hover {
-  background-color: #9D1840;
+  background-color: #39848D;
 }
 
 section#contact form .hidden {
