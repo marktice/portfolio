@@ -25,8 +25,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #page-wrapper {
-  // width: 100%;
-  // max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -52,7 +50,6 @@ nav {
       height: 50px;
       padding: 15px 15px;
       &:hover {
-        color: $light-primary;
         &:before {
           position: absolute;
           z-index: -1;
@@ -78,6 +75,7 @@ nav {
         font-family: $content-font;
         color: $white;
         text-decoration: none;
+        transition: all 0.5s ease;      
         &:hover {
           color: $white;
           background-color: $primary;
@@ -254,12 +252,9 @@ section#contact {
     display: flex;
     flex-flow: row wrap;
   }
-  p {
-    margin-bottom: 0.75em;
-  }
-  hr {
-    margin-bottom: 1em;
-  }
+  p {margin-bottom: 0.75em;}
+  p:last-of-type {margin-bottom: 0;}
+  hr {margin-bottom: 1em;}
   #contact-content {
     padding-right: 10%;
     a {
@@ -275,7 +270,7 @@ section#contact {
     width: 100%;
     margin: auto;
     padding-top: 2em;
-    padding-bottom: 2em;
+    padding-bottom: 1.5em;
     display: flex;
     flex-direction: column;
     input, textarea {
@@ -423,14 +418,3 @@ footer {
     width: 80% !important;
   }
 }
-
-// HD Screens up
-// @media only screen and (min-width: 1368px) {
-// .project-item {
-//   flex-basis: 560px !important;
-//   height: 510px !important;
-//     img {
-//       width: 480px !important;
-//     }
-//   }
-// }

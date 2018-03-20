@@ -108,10 +108,6 @@ nav div#logo a {
   padding: 15px 15px;
 }
 
-nav div#logo a:hover {
-  color: #C5EFF7;
-}
-
 nav div#logo a:hover:before {
   position: absolute;
   z-index: -1;
@@ -138,6 +134,7 @@ nav #main-nav li a {
   font-family: Montserrat, "Times New Roman", Times, serif;
   color: #fff;
   text-decoration: none;
+  transition: all 0.5s ease;
 }
 
 nav #main-nav li a:hover {
@@ -335,6 +332,10 @@ section#contact p {
   margin-bottom: 0.75em;
 }
 
+section#contact p:last-of-type {
+  margin-bottom: 0;
+}
+
 section#contact hr {
   margin-bottom: 1em;
 }
@@ -355,7 +356,7 @@ section#contact form {
   width: 100%;
   margin: auto;
   padding-top: 2em;
-  padding-bottom: 2em;
+  padding-bottom: 1.5em;
   display: flex;
   flex-direction: column;
 }
