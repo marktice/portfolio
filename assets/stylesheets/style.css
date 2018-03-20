@@ -155,7 +155,7 @@ section#landing {
   color: #fff;
   min-height: 100vh;
   background-color: #333333;
-  padding-top: 150px;
+  padding-top: 20vh;
 }
 
 section#landing .landing-container {
@@ -372,6 +372,9 @@ section#contact form input, section#contact form textarea {
 section#contact form input:hover, section#contact form input:focus, section#contact form textarea:hover, section#contact form textarea:focus {
   background-color: #fff;
   color: #333333;
+  outline: none;
+  border: 1px solid #39848D;
+  box-shadow: 0 0 2px #39848D;
 }
 
 section#contact form textarea {
@@ -439,13 +442,12 @@ footer a#up-button {
   grid-area: up;
 }
 
-footer a#up-button .fa-angle-up {
+footer a#up-button i {
   color: #fff;
-  font-size: 3em;
-  animation: beat 3s ease infinite;
+  font-size: 2.25em;
 }
 
-footer a#up-button .fa-angle-up:hover {
+footer a#up-button i:hover {
   color: #39848D;
 }
 

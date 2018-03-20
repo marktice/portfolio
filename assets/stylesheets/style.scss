@@ -98,7 +98,8 @@ section#landing {
   color: $white;
   min-height: 100vh;
   background-color: $grey;
-  padding-top: 150px;
+  // padding-top: 150px;
+  padding-top: 20vh;
 
   .landing-container {
     width: fit-content;
@@ -287,6 +288,9 @@ section#contact {
       &:hover, &:focus {
         background-color: $white;
         color: $grey;
+        outline: none;
+        border: 1px solid $primary;
+        box-shadow: 0 0 2px $primary;
       }
     }
     textarea {
@@ -344,10 +348,9 @@ footer {
   }
   a#up-button {
     grid-area: up;
-    .fa-angle-up {
+    i {
       color: $white;
-      font-size: 3em;
-      animation: beat 3s ease infinite;
+      font-size: 2.25em;
       &:hover {
         color: $primary;
       }
