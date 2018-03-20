@@ -297,14 +297,11 @@ section#contact {
       color: $white;
       background-color: $grey;
       cursor: pointer;
-      // &:disabled { opacity: 0.5; }
       &:hover {
         background-color: $primary;
       }
     }
-    .hidden {
-      display: none;
-    }
+    .hidden {display: none;} // form honeypot
   }
 }
 
@@ -359,7 +356,7 @@ footer {
 }
 
 // MEDIA QUERIES
-// Widescreen
+// Navbar change for small screens.
 @media only screen and (max-width: 600px) {
   #logo {
     display: none;
@@ -382,6 +379,7 @@ footer {
   }
 }
 
+// Split into two columns
 @media only screen and (min-width: 768px) {
   #landing {
     #title-header {font-size: 5em !important}
@@ -404,8 +402,8 @@ footer {
   }
 }
 
+// site width down to 80%
 @media only screen and (min-width: 1200px) {
-  // site width down to 80%
   .about-container {
     .col:first-of-type {
       padding-left: 10% !important;
