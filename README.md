@@ -1,11 +1,11 @@
 # My Portfolio Website
 https://marktice.netlify.com/<hr>
 My portfolio website is a project i will continue to return to and optimize well into my studies and career.<br><br>
-I decided to go for a minimal modern style with some soft animations and use of color to add character and life. I also chose to have all the content on one page, this is perfect for a portfolio site as all the content is related.
+I decided to go for a minimal modern style with some soft animations and use of color to add life. I also chose to have all the content on one page. This is perfect for a portfolio site as all the content is related, so the site flows well.
 
 ## Trello board <hr>
 https://trello.com/b/rGtrOlwG/portfolio<br>
-I used trello extensivley to track my progress and my focus my priorities towards the most crucial tasks. I have used trello in the past for small chores but not for personal projects.
+I used trello extensivley to track my progress and to focus my priorities towards the most crucial tasks. I have used trello in the past for small chores but not for personal projects, but definitely will continue to in the future.
 ![](assets/img/readme/trello.png)
 
 ## Design <hr>
@@ -14,37 +14,52 @@ I used pinterest to find inspiration for my site style. I always loved the use o
 https://www.pinterest.com.au/markthomastice/portfolio/
 ![](assets/img/readme/pinterest.png)
 
-### Colors and Wireframes <hr>
-My color scheme was achieved from extracting colors from my inspiration pictures. I then played around with what worked together, in terms of contrast for the font and background.<br><br>I found that although the contrast between the two main colors was strong, it was blinding when used for actual content. To combat this I decided to incorporate white and a dark grey for most of my content with the green color mixed in.
-
-View my full Figma here: https://www.figma.com/file/ZxlQ8AjN9M7vi6mOKHSyTmj0/Porfolio
-![](assets/img/readme/figma.png)
+### Colors<hr>
+My color scheme was achieved from extracting colors from my inspiration pictures. I then played around with what worked together in terms of contrast for the font and background.
 
 ### Typography <hr>
 I decided i wanted a simple and clean san serif font for the main content and then a simple yet playful font for main headers. After exploring what was available i settled on Audiowide for the headers, and Montserrat for the content.
 
+Headers<br>
 ![](assets/img/readme/font-headers.png)
+<br>Content<br>
 ![](assets/img/readme/font-content.png)
+<br>Example<br>
+![](assets/img/readme/typography-example.png)
+
+### Logo <hr>
+I tried several designs but kept coming to the conclusion that my name and face were what i wanted viewers to remember, not an inrelevant logo design.<br><br> 
+Therefore for my logo i simply went with my name in the main font, which is displayed front and center on my landing page, aswell as top left corner in the nav bar on large displays. I also added an animation on hover for extra effect.
+
+![](assets/img/readme/logo.png)
+
+## Wireframes <hr>
+I found that although the contrast between the two main colors was strong, it was quite blinding when used for actual content. To combat this I decided to incorporate white and a dark grey for most of my content with the green color mixed in.
+
+<br>View my full Figma here: https://www.figma.com/file/ZxlQ8AjN9M7vi6mOKHSyTmj0/Porfolio
+![](assets/img/readme/figma.png)
 
 ## <hr> Coding <hr>
 A version of my MVP was created very early in the process before much effort was put into content creation or deep design. This can be seen from my early commits on github and also from my codepen progress. I wanted to assure i got the basic layout of the site nailed down early so i could continue to build parts of the site to assure what i wanted was actually achievable.
 
 - What went well
-  - nothing
+  - The general layout and flow of the site. The colors contrast well. Typography looks good. Minimal design.
 - What was challenging
-  - centering
+  - media queries - changing to multiple columns and re-sizing everything on large displays. 
 - What got changed
-  - My landing page seemed a bit too minimal in terms of centent so i added some spacing and an inspirational quote.
+  - Background colors
+  - My landing page seemed a bit too minimal and bland so i added some spacing and an inspirational quote, then added animation.
 - Where to from here
   - personalized domain name
   - add projects i make throughout the course
-  - use it to practice JavaScript
-  - add a blog
+    - make links to gihub, hover over effect (pop-out card)
+  - use it to practice JavaScript (if practical)
+  - include a blog
   - clean up code
   - optimize
 
 ### Animation <hr>
-I chose to use some tasteful animations to make some content stand out. I felt my landing page could use something subtle to add life to what is a rather simple page. To do this i used fade in for the quote and the left border to fade in from the left. I also made an animation for the down button to beat so as to entice the user to press it. <br><br>
+I added some subtle animations to make some content stand out. I felt my landing page could use something add life to what is a rather simple page. To do this i used fade in for the quote and the left border to come in from the left. I also made an animation for the down button to beat so as to entice the user to press it. <br><br>
 I also coded an animation for my name which i used on hover on the landing page and in the nav bar. A few other small animations are scattered accross the site.<br><br>
 I implemented smooth scrolling for the nav bar id links very early on. I felt for a one page site this feature was very effective in enhancing the user experience.
 
