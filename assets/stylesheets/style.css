@@ -68,12 +68,12 @@ html {
 }
 
 body {
-  font-family: Montserrat, "Source Code Pro", monospace;
+  font-family: Montserrat, "Times New Roman", Times, serif;
   color: #333333;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Audiowide, "Source Code Pro", monospace;
+  font-family: Audiowide, "Times New Roman", Times, serif;
   font-weight: normal;
 }
 
@@ -97,7 +97,7 @@ nav div#logo {
   margin-left: 25px;
   float: left;
   position: relative;
-  font-family: Audiowide, "Source Code Pro", monospace;
+  font-family: Audiowide, "Times New Roman", Times, serif;
 }
 
 nav div#logo a {
@@ -135,7 +135,7 @@ nav #main-nav li a {
   display: inline-block;
   height: 50px;
   padding: 15px 15px;
-  font-family: Montserrat, "Source Code Pro", monospace;
+  font-family: Montserrat, "Times New Roman", Times, serif;
   color: #fff;
   text-decoration: none;
 }
@@ -179,14 +179,14 @@ section#landing .landing-container #title-header:hover:before {
 
 section#landing .landing-container .dev-subtitle {
   color: #39848D;
-  font-family: Montserrat, "Source Code Pro", monospace;
+  font-family: Montserrat, "Times New Roman", Times, serif;
   font-size: 1.25em;
   text-align: end;
 }
 
 section#landing .landing-container .engineer-subtitle {
   color: #9D1840;
-  font-family: Montserrat, "Source Code Pro", monospace;
+  font-family: Montserrat, "Times New Roman", Times, serif;
   font-size: 1.25em;
   text-align: end;
 }
@@ -358,7 +358,7 @@ section#contact form {
 
 section#contact form input, section#contact form textarea {
   font-size: 1em;
-  font-family: Montserrat, "Source Code Pro", monospace;
+  font-family: Montserrat, "Times New Roman", Times, serif;
   padding: 1em;
   transition: all 0.5s ease-in-out;
   margin-bottom: 3px;

@@ -1,6 +1,5 @@
 # My Portfolio Website
 https://marktice.netlify.com/
-<!-- www.marktice.com -->
 
 ## Trello board
 https://trello.com/b/rGtrOlwG/portfolio
