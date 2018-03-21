@@ -42,6 +42,8 @@ https://www.pinterest.com.au/markthomastice/portfolio/
 ### Colors<hr>
 My color scheme was achieved from extracting colors from my inspiration pictures. I then played around with what worked together in terms of contrast for the font and background.
 
+![](assets/img/readme/colors.png)
+
 ### Typography <hr>
 I decided i wanted a simple and clean san serif font for the main content and then a simple yet playful font for main headers. After exploring what was available i settled on Audiowide for the headers, and Montserrat for the content.
 
