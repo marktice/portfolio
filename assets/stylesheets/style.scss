@@ -100,6 +100,7 @@ section#landing {
   padding-top: 20vh;
 
   .landing-container {
+    width: 70%; //fallback for other browsers
     width: fit-content;
     margin: 0 auto;
     #title-header {

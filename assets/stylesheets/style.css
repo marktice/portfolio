@@ -156,6 +156,7 @@ section#landing {
 }
 
 section#landing .landing-container {
+  width: 70%;
   width: fit-content;
   margin: 0 auto;
 }
