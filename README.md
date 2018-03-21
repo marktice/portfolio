@@ -6,6 +6,28 @@ I decided to go for a minimal modern style with some soft animations and use of 
 <br><br>
 Currently the site works for all browsers, but was designed using chrome.
 
+## Contents <hr>
+- [Trello board](#trello-board-hr)
+- [Design](#design-hr)
+  - [Mood board & Inspiration](#mood-board-inspiration-hr)
+  - [Colors](#colorshr)
+  - [Typography](#typography-hr)
+  - [Logo](#logo-hr)
+  - [Wireframes](#wireframes-hr)
+- [Coding](#hr-coding-hr)
+  - [Animation](#animation-hr)
+- [Tools](#hrtools-hr)
+  - [Sass](#sass-hr)
+  - [Favicons](#favicons-hr)
+  - [Sitemap Generator](#sitemap-generator-hr)
+  - [Social Media Debuggers](#social-media-debuggers-hr)
+  - [Optimisation](#optimisation-hr)
+- [Testing](#testing-hr)
+  - [Pagespeed](#pagespeed-hr)
+  - [Browser Support](#browser-support-hr)
+  - [Robots.txt](#robotstxt-hr)
+- [Final Product](#final-product-hr)
+
 ## Trello board <hr>
 https://trello.com/b/rGtrOlwG/portfolio<br>
 I used trello extensivley to track my progress and to focus my priorities towards the most crucial tasks. I have used trello in the past for small chores but not for personal projects, but definitely will continue to in the future.
@@ -36,7 +58,7 @@ Therefore for my logo i simply went with my name in the main font, which is disp
 
 ![](assets/img/readme/logo.png)
 
-## Wireframes <hr>
+### Wireframes <hr>
 I found that although the contrast between the two main colors was strong, it was quite blinding when used for actual content. To combat this I decided to incorporate white and a dark grey for most of my content with the green color mixed in.
 
 - View my full Figma here: https://www.figma.com/file/ZxlQ8AjN9M7vi6mOKHSyTmj0/Porfolio
