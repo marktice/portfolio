@@ -1,7 +1,10 @@
 # My Portfolio Website
 https://marktice.netlify.com/<hr>
-My portfolio website is a project i will continue to return to and optimize well into my studies and career.<br><br>
+My portfolio website is a project i will continue to return to and optimize well into my studies and career.
+<br><br>
 I decided to go for a minimal modern style with some soft animations and use of color to add life. I also chose to have all the content on one page. This is perfect for a portfolio site as all the content is related, so the site flows well.
+<br><br>
+Currently the site works for all browsers, but was designed using chrome.
 
 ## Trello board <hr>
 https://trello.com/b/rGtrOlwG/portfolio<br>
@@ -50,6 +53,7 @@ A version of my MVP was created very early in the process before much effort was
   - Background colors
   - My landing page seemed a bit too minimal and bland so i added some spacing and an inspirational quote, then added animation.
 - Where to from here
+  - optimize support for other browsers than chrome
   - personalized domain name
   - add projects i make throughout the course
     - make links to gihub, hover over effect (pop-out card)
@@ -85,10 +89,18 @@ http://www.twitshot.com/
 I optimized images using ImageOptim. This reduced file size of my images significantly.  https://imageoptim.com/
 
 ## Testing <hr>
+### Pagespeed <hr>
 I used the pagespeed tester from google to evaluate my sites optimization. I achieved an average score which could be improved apon reducing the render-blocking css used and further optimizing and re-sizing images used.
 
 https://developers.google.com/speed/pagespeed/insights/
 ![](assets/img/readme/page_speed.png)
+
+### Browser Support <hr>
+Currently the site works for all browsers, but was designed using chrome. 
+<br><br>
+Flexbox was used for the columns, and grid was used for the footer. Since these are not supported for older browsers i aim to change them to floats and inline blocks in the future.
+<br><br>
+I used 'content-width' for landing page without realising it's only supported on chrome. I added a fallback but it's not perfect at this stage.
 
 ## Final Product <hr>
 Overall i am fairly happy with the 'final' product, however i do see many areas where i would like to improve and optimize the site in the future. 
