@@ -20,11 +20,11 @@ My color scheme was achieved from extracting colors from my inspiration pictures
 ### Typography <hr>
 I decided i wanted a simple and clean san serif font for the main content and then a simple yet playful font for main headers. After exploring what was available i settled on Audiowide for the headers, and Montserrat for the content.
 
-Headers<br>
+- Headers<br>
 ![](assets/img/readme/font-headers.png)
-<br>Content<br>
+- Content<br>
 ![](assets/img/readme/font-content.png)
-<br>Example<br>
+- Example<br>
 ![](assets/img/readme/typography-example.png)
 
 ### Logo <hr>
@@ -36,7 +36,7 @@ Therefore for my logo i simply went with my name in the main font, which is disp
 ## Wireframes <hr>
 I found that although the contrast between the two main colors was strong, it was quite blinding when used for actual content. To combat this I decided to incorporate white and a dark grey for most of my content with the green color mixed in.
 
-<br>View my full Figma here: https://www.figma.com/file/ZxlQ8AjN9M7vi6mOKHSyTmj0/Porfolio
+- View my full Figma here: https://www.figma.com/file/ZxlQ8AjN9M7vi6mOKHSyTmj0/Porfolio
 ![](assets/img/readme/figma.png)
 
 ## <hr> Coding <hr>
@@ -86,6 +86,7 @@ I optimized images using ImageOptim. This reduced file size of my images signifi
 
 ## Testing <hr>
 I used the pagespeed tester from google to evaluate my sites optimization. I achieved an average score which could be improved apon reducing the render-blocking css used and further optimizing and re-sizing images used.
+
 https://developers.google.com/speed/pagespeed/insights/
 ![](assets/img/readme/page_speed.png)
 
