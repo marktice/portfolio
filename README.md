@@ -71,6 +71,9 @@ I implemented smooth scrolling for the nav bar id links very early on. I felt fo
 ### Sass <hr>
 I decided from the start that i would use this project to learn Sass. I'm very glad that i did as some of the features make organizing and understanding the flow your styling much easier to follow.
 
+### Favicons <hr>
+I used https://realfavicongenerator.net/ to create my favicon icons. The image i used was my profile picture which i use for all of my profiles for consistency.
+
 ### Sitemap Generator <hr>
 I generated my sitemap using: https://www.xml-sitemaps.com/
 I also used the tool to then validate the sitemap.
@@ -98,9 +101,16 @@ https://developers.google.com/speed/pagespeed/insights/
 ### Browser Support <hr>
 Currently the site works for all browsers, but was designed using chrome. 
 <br><br>
-Flexbox was used for the columns, and grid was used for the footer. Since these are not supported for older browsers i aim to change them to floats and inline blocks in the future.
+Flexbox was used for the columns and project items, and grid was used for the footer. Since these are not supported for older browsers i aim to change them to floats and inline blocks in the future.
 <br><br>
-I used 'content-width' for landing page without realising it's only supported on chrome. I added a fallback but it's not perfect at this stage.
+I used 'content-fit' on my landing page without realising it's only supported on chrome/opera. I added a fallback but it's not perfect at this stage.
+
+### Robots.txt <hr>
+Added a robots.txt to disallow web robots crawling the site.
+<br><br>
+Currently i tell all web crawlers not to crawl any pages on my site. This may want to be adjusted in the future to allow some search engines.
+<br><br>
+I used https://technicalseo.com/seo-tools/robots-txt/ to test which user agents are blocked.
 
 ## Final Product <hr>
 Overall i am fairly happy with the 'final' product, however i do see many areas where i would like to improve and optimize the site in the future. 
