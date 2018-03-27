@@ -151,7 +151,8 @@ section {
 section#landing {
   color: #fff;
   min-height: 100vh;
-  background-color: #333333;
+  background-image: url("/assets/img/sf_sailing_bw.jpg");
+  background-size: cover;
   padding-top: 20vh;
 }
 
@@ -163,6 +164,7 @@ section#landing .landing-container {
 
 section#landing .landing-container #title-header {
   font-size: 3em;
+  text-shadow: 1px 1px 1px #39848D;
   z-index: 10;
   position: relative;
   cursor: default;
@@ -177,25 +179,29 @@ section#landing .landing-container #title-header:hover:before {
 
 section#landing .landing-container .dev-subtitle {
   color: #39848D;
+  opacity: 0.5;
   font-family: Montserrat, "Times New Roman", Times, serif;
   font-size: 1.25em;
   text-align: end;
 }
 
 section#landing .landing-container .engineer-subtitle {
-  color: #9D1840;
+  color: #39848D;
+  opacity: 0.5;
   font-family: Montserrat, "Times New Roman", Times, serif;
   font-size: 1.25em;
   text-align: end;
 }
 
 section#landing .landing-container hr {
+  display: none;
   margin-top: 2em;
   margin-bottom: 1em;
   width: 100%;
 }
 
 section#landing .landing-container blockquote {
+  display: none;
   border-left: 3px solid #fff;
   font-size: 0.75em;
 }
@@ -217,6 +223,7 @@ section#landing .fa-angle-down {
 }
 
 section#landing .fa-angle-down:hover {
+  transition: all 0.4s ease;
   color: #39848D;
 }
 
