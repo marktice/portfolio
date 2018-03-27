@@ -236,12 +236,12 @@ section#about #portrait-img {
   top: 50px;
   left: 10%;
   left: calc(50% - 100px);
-  border-radius: 50%;
-  transition: all 1s ease;
+  border-radius: 6px;
+  transition: all 0.25s ease;
 }
 
 section#about #portrait-img:hover {
-  transform: scale(1.05);
+  transform: scale(1.025);
 }
 
 section#about hr {
@@ -366,7 +366,7 @@ section#contact form input, section#contact form textarea {
   font-size: 1em;
   font-family: Montserrat, "Times New Roman", Times, serif;
   padding: 1em;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
   margin-bottom: 3px;
   border: 1px solid #333333;
 }
@@ -421,7 +421,7 @@ footer .social-container {
 footer .social-container i {
   color: #fff;
   font-size: 1.5em;
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
 }
 
 footer .social-container i:visited {
@@ -430,7 +430,7 @@ footer .social-container i:visited {
 
 footer .social-container i:hover {
   color: #39848D;
-  transform: scale(1.3);
+  transform: scale(1.15);
 }
 
 footer .copyright {
@@ -445,12 +445,14 @@ footer a#up-button {
 }
 
 footer a#up-button i {
+  transition: all 0.4s ease;
   color: #fff;
   font-size: 2.25em;
 }
 
 footer a#up-button i:hover {
   color: #39848D;
+  transform: scale(1.15);
 }
 
 @media only screen and (max-width: 600px) {
