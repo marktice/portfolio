@@ -215,14 +215,14 @@ section#landing .fa-angle-down {
   position: absolute;
   left: 50%;
   margin-left: -0.25em;
-  bottom: 5%;
-  color: #39848D;
+  bottom: 7.5%;
+  color: #fff;
   animation: beat 2s ease-in-out infinite;
 }
 
 section#landing .fa-angle-down:hover {
   transition: all 0.5s ease;
-  color: #9D1840;
+  color: #39848D;
 }
 
 section#about {

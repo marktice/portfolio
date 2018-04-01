@@ -155,12 +155,12 @@ section#landing {
     position: absolute;
     left: 50%;
     margin-left: -0.25em;
-    bottom: 5%;
-    color: $primary;
+    bottom: 7.5%;
+    color: $white;
     animation: beat 2s ease-in-out infinite;
     &:hover {
       transition: all 0.5s ease;      
-      color: $secondary;
+      color: $primary;
     }
   }
 }
