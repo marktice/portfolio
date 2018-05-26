@@ -157,7 +157,6 @@ section#landing {
 
 section#landing .landing-container {
   width: 70%;
-  width: fit-content;
   margin: 0 auto;
   opacity: 0.8;
 }
@@ -181,7 +180,6 @@ section#landing .landing-container .dev-subtitle {
   color: #39848D;
   font-family: Montserrat, "Times New Roman", Times, serif;
   font-size: 1.25em;
-  text-align: end;
 }
 
 section#landing .landing-container hr {
@@ -502,9 +500,6 @@ footer a#up-button i:hover {
     font-size: 5em !important;
   }
   #landing .dev-subtitle {
-    font-size: 2em !important;
-  }
-  #landing .engineer-subtitle {
     font-size: 2em !important;
   }
   #landing blockquote {

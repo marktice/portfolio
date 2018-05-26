@@ -100,8 +100,7 @@ section#landing {
   // padding-top: 20vh;
 
   .landing-container {
-    width: 70%; //fallback for other browsers
-    width: fit-content;
+    width: 70%;
     margin: 0 auto;
     opacity: 0.8;
     #title-header {
@@ -123,7 +122,6 @@ section#landing {
       color: $primary;
       font-family: $content-font;
       font-size: 1.25em;
-      text-align: end;
     }
     hr {
       display: none; // currently removed
@@ -168,7 +166,7 @@ section#about {
     width: 200px;
     position: absolute;
     top: 50px;
-    left: 10%; //fallback
+    left: 10%; //fallback for old browsers
     left: calc(50% - 100px); //for center
     border-radius: 6px;
     transition: all 0.25s ease;
@@ -314,7 +312,7 @@ section#contact {
         background-color: $primary;
       }
     }
-    .hidden {display: none;} // form honeypot(bot catcher)
+    .hidden {display: none;} // form honeypot (bot catcher)
   }
 }
 
@@ -370,7 +368,7 @@ footer {
 }
 
 // MEDIA QUERIES
-// Navbar change for small screens.
+// Navbar change for small screens
 @media only screen and (max-width: 600px) {
   #logo {
     display: none;
@@ -393,12 +391,11 @@ footer {
   }
 }
 
-// Split into two columns
+// Split into columns
 @media only screen and (min-width: 768px) {
   #landing {
     #title-header {font-size: 5em !important}
     .dev-subtitle {font-size: 2em !important}
-    .engineer-subtitle {font-size: 2em !important}
     blockquote {font-size: 1em;}
     #down-arrow {
       font-size: initial;
