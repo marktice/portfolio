@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mark Tice</title>
   <link rel="stylesheet" href="/assets/stylesheets/style.css">
   <link href="https://fonts.googleapis.com/css?family=Audiowide|Montserrat" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <!-- animate css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <!-- Icons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -18,15 +18,17 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <!-- Facebook Metatags -->
-  <meta property="og:image" content="https://marktice.netlify.com/assets/img/profile_sf_square.jpg">
-  <meta property="og:url" content="https://marktice.netlify.com/">
+  <meta property="og:image" content="https://marktice.com/assets/img/profile_sf_square.jpg">
+  <meta property="og:url" content="https://marktice.com/">
   <meta property="og:title" content="Mark Tice">
   <meta property="og:description" content="Fullstack Developer and Engineer based in Melbourne, Australia.">
   <!-- Twitter Metatags -->
   <meta name="twitter:title" content="Mark Tice">
   <meta name="twitter:description" content="Fullstack Developer and Engineer based in Melbourne, Australia.">
-  <meta name="twitter:image" content="https://marktice.netlify.com/assets/img/profile_sf_square.jpg">
+  <meta name="twitter:image" content="https://marktice.com/assets/img/profile_sf_square.jpg">
   <meta name="twitter:card" content="/assets/img/profile_sf_square.jpg">
+  
+  <title>Mark Tice</title>
 </head>
 <body>
   <div id="page-wrapper">
@@ -68,15 +70,15 @@
             <p>When I'm not behind a computer screen I'm likely out hiking, sailing, or maybe just at home reading.</p>
           </div>
           <div class="col skills" id="about-skills">
-            <h3>Coding Skills</h3>
+            <h3>Skills</h3>
             <hr>
-            <p>HTML5, CSS3, Sass</p>
-            <p>JavaScript, Express, React, Node.js, Redux, Webpack</p>
-            <p>SQL, MongoDB</p>
+            <p>JavaScript, Vue, React, Node, Express, Redux, Webpack</p>
+            <p>HTML5, CSS3/Sass</p>
             <p>Ruby, Ruby on Rails</p>
+            <p>SQL, PostgreSQL, MongoDB</p>
             <h3>Tools</h3>
             <hr>
-            <p>Git, Github, Vim, VSCode, Heroku, Netlify, Figma</p>
+            <p>Git, Github, VSCode, Heroku, Netlify, Figma</p>
           </div>
         </div>
       </section>
@@ -84,22 +86,25 @@
       <section id="projects">
         <h2>Projects</h2>
         <div class="projects-container">
-          <div class="project-item">
+          <div class="project">
+            <h3>Boot Scoot</h3>
+            <img src="/assets/img/boot-scoot-480.gif" alt="Picture of Boot Scoot app">
+            <p>Hire your personal designated driver, an uber clone with a twist!</p>
+            <p>Made with: Ruby on Rails, Javascript, HTML, CSS/Sass</p>
+            <a href="https://bootscoot.herokuapp.com/" target="_blank">Website</a>
+            <a href="https://github.com/marktice/boot_scoot" target="_blank">Github</a>
+          </div>
+          <div class="project">
             <h3>Terminal App</h3>
             <img src="/assets/img/terminal_app_480_300.gif" alt="Picture of Terminal App">
-            <p>Terminal game made in ruby.</p>
+            <p>Terminal game made with ruby.</p>
           </div>
-          <div class="project-item">
+          <div class="project">
             <h3>Portfolio</h3>
             <img src="/assets/img/portfolio_img.jpg" alt="Picture of Personal Portfolio">
             <p>Personal Portfolio</p>
           </div>
-          <div class="project-item">
-            <h3>Train Tracker</h3>
-            <img src="/assets/img/train.jpg" alt="Picture of Train Tracker">
-            <p>An offline public train tracker.</p>
-          </div>
-          <div class="project-item" id="project-countdown">
+          <div class="project" id="project-countdown">
             <h3>Countdown</h3>
             <img src="/assets/img/countdown.jpg" alt="Picture of Countdown">
             <p>Simple coutndown app with alarm</p>
@@ -114,7 +119,7 @@
             <hr>
             <p>Have a comment or inquiry?</p>
             <p>Send a brief message and i'll get back to you.</p>
-            <p>You can also reach me on <a href="https://www.linkedin.com/in/mark-tice-369570158/" id="linkdin" target="_blank">Linkedin</a> & <a href="https://github.com/marktice" id="github" target="_blank">Github</a>.</p>
+            <p>You can also reach me on <a href="https://www.linkedin.com/in/mark-tice/" id="linkdin" target="_blank">Linkedin</a> & <a href="https://github.com/marktice" id="github" target="_blank">Github</a>.</p>
             <p>Thanks for stopping by!</p>
           </div>
           <form class="col" name="contact" netlify-honeypot="bot-field" method="POST" netlify>
@@ -130,12 +135,12 @@
     
     <footer>
       <div class="social-container">
-        <a href="https://www.linkedin.com/in/mark-tice-369570158/" id="linkdin" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/mark-tice/" id="linkdin" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/marktice" id="github" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://codepen.io/marktice/" id="codepen" target="_blank"><i class="fab fa-codepen"></i></a>  
       </div>
       <div class="copyright">
-        <i class="fas fa-cog fa-spin"></i><span> Designed and constructed by Mark Tice</span>
+        <i class="fas fa-cog fa-spin"></i><span> by Mark Tice 2018</span>
       </div>
       <a id="up-button" href="#top"><i class="fas fa-arrow-up"></i></a>
     </footer>

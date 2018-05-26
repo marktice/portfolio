@@ -293,31 +293,46 @@ section#projects .projects-container {
   margin-top: 25px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
 }
 
-section#projects .projects-container .project-item {
-  flex-basis: 90%;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  text-align: center;
+section#projects .projects-container .project {
+  flex-basis: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
   margin-top: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
   color: #fff;
   background-color: #2a6269;
   box-shadow: 0px 3px 8px 0 rgba(0, 0, 0, 0.16), 0px 4px 12px 0 rgba(0, 0, 0, 0.12);
+  transition: all 0.5s ease;
 }
 
-section#projects .projects-container .project-item p {
-  font-size: 0.875em;
+section#projects .projects-container .project h3 {
+  font-size: 1.35em;
 }
 
-section#projects .projects-container .project-item img {
+section#projects .projects-container .project:hover {
+  box-shadow: 0px 6px 16px 0 rgba(0, 0, 0, 0.16), 0px 8px 24px 0 rgba(0, 0, 0, 0.12);
+  transform: scale(1.015);
+}
+
+section#projects .projects-container .project p {
+  font-size: 0.850em;
+  margin: 0.5em 2em;
+}
+
+section#projects .projects-container .project a {
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+section#projects .projects-container .project img {
+  transition: all 0.5s ease;
   margin-top: 1em;
-  margin-bottom: 1em;
-  width: 80%;
+  margin-bottom: 0.5em;
+  width: 90%;
+  border-radius: 3px;
 }
 
 section#contact {
@@ -505,8 +520,8 @@ footer a#up-button i:hover {
     padding-top: 300px !important;
     min-height: 100vh !important;
   }
-  .project-item {
-    flex-basis: 45% !important;
+  .project {
+    flex-basis: 49% !important;
   }
 }
 
@@ -515,10 +530,6 @@ footer a#up-button i:hover {
     padding-left: 10% !important;
   }
   .about-container .col:last-of-type {
-    padding-right: 10% !important;
-  }
-  #projects {
-    padding-left: 10% !important;
     padding-right: 10% !important;
   }
   .contact-wrapper {
