@@ -364,11 +364,12 @@ section#contact #contact-content {
   padding-right: 10%;
 }
 
-section#contact #contact-content a:link {
+section#contact #contact-content a {
+  transition: all 0.25s ease;
   color: #39848D;
 }
 
-section#contact #contact-content a:visited {
+section#contact #contact-content a:hover {
   color: #9D1840;
 }
 
@@ -525,6 +526,9 @@ footer a#up-button i:hover {
 }
 
 @media only screen and (min-width: 1200px) {
+  #landing {
+    padding-top: 20vh;
+  }
   .about-container .col:first-of-type {
     padding-left: 10% !important;
   }

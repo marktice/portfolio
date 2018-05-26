@@ -273,10 +273,9 @@ section#contact {
   #contact-content {
     padding-right: 10%;
     a {
-      &:link {
-        color: $primary;
-      }
-      &:visited {
+      transition: all 0.25s ease;
+      color: $primary;
+      &:hover {
         color: $secondary;
       }
     }
@@ -315,7 +314,7 @@ section#contact {
         background-color: $primary;
       }
     }
-    .hidden {display: none;} // form honeypot
+    .hidden {display: none;} // form honeypot(bot catcher)
   }
 }
 
@@ -419,6 +418,10 @@ footer {
 
 // site width down to 80%
 @media only screen and (min-width: 1200px) {
+  #landing {
+    padding-top: 20vh;
+  }
+
   .about-container {
     .col:first-of-type {
       padding-left: 10% !important;
