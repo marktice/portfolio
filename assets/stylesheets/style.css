@@ -151,15 +151,15 @@ section {
 section#landing {
   min-height: 100vh;
   background-image: url("/assets/img/sf_sailing_bw.jpg");
+  background-position: top right;
   background-size: cover;
-  padding-top: 20vh;
 }
 
 section#landing .landing-container {
   width: 70%;
   width: fit-content;
   margin: 0 auto;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 section#landing .landing-container #title-header {
@@ -178,13 +178,6 @@ section#landing .landing-container #title-header:hover:before {
 }
 
 section#landing .landing-container .dev-subtitle {
-  color: #39848D;
-  font-family: Montserrat, "Times New Roman", Times, serif;
-  font-size: 1.25em;
-  text-align: end;
-}
-
-section#landing .landing-container .engineer-subtitle {
   color: #39848D;
   font-family: Montserrat, "Times New Roman", Times, serif;
   font-size: 1.25em;
@@ -216,13 +209,13 @@ section#landing .fa-angle-down {
   left: 50%;
   margin-left: -0.25em;
   bottom: 7.5%;
-  color: #fff;
+  color: #39848D;
   animation: beat 2s ease-in-out infinite;
 }
 
 section#landing .fa-angle-down:hover {
   transition: all 0.5s ease;
-  color: #39848D;
+  color: #9D1840;
 }
 
 section#about {
@@ -314,7 +307,7 @@ section#projects .projects-container .project h3 {
 
 section#projects .projects-container .project:hover {
   box-shadow: 0px 6px 16px 0 rgba(0, 0, 0, 0.16), 0px 8px 24px 0 rgba(0, 0, 0, 0.12);
-  transform: scale(1.015);
+  transform: scale(1.01);
 }
 
 section#projects .projects-container .project p {
@@ -323,8 +316,14 @@ section#projects .projects-container .project p {
 }
 
 section#projects .projects-container .project a {
+  color: #69b9c3;
   margin-right: 1em;
   margin-left: 1em;
+  transition: all 0.25s ease;
+}
+
+section#projects .projects-container .project a:hover {
+  color: #9D1840;
 }
 
 section#projects .projects-container .project img {

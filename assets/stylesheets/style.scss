@@ -94,16 +94,16 @@ section {
 
 section#landing {
   min-height: 100vh;
-  // background-color: $grey;
   background-image: url("/assets/img/sf_sailing_bw.jpg");
+  background-position: top right;
   background-size: cover;
-  padding-top: 20vh;
+  // padding-top: 20vh;
 
   .landing-container {
     width: 70%; //fallback for other browsers
     width: fit-content;
     margin: 0 auto;
-    opacity: 0.7;
+    opacity: 0.8;
     #title-header {
       font-size: 3em;
       text-shadow: 1.5px 1.5px 1px $primary;
@@ -125,22 +125,14 @@ section#landing {
       font-size: 1.25em;
       text-align: end;
     }
-    .engineer-subtitle {
-      color: $primary;
-      font-family: $content-font;
-      font-size: 1.25em;
-      text-align: end;
-    }
     hr {
       display: none; // currently removed
-
       margin-top: 2em;
       margin-bottom: 1em;
       width: 100%;
     }
     blockquote {
       display: none; // currently removed
-
       border-left: 3px solid $white;
       font-size: 0.75em;      
       p {
@@ -156,11 +148,11 @@ section#landing {
     left: 50%;
     margin-left: -0.25em;
     bottom: 7.5%;
-    color: $white;
+    color: $primary;
     animation: beat 2s ease-in-out infinite;
     &:hover {
       transition: all 0.5s ease;      
-      color: $primary;
+      color: $secondary;
     }
   }
 }
@@ -238,15 +230,20 @@ section#projects {
       transition: all 0.5s ease;
       &:hover {
         box-shadow: 0px 6px 16px 0 rgba(0, 0, 0, 0.16), 0px 8px 24px 0 rgba(0, 0, 0, 0.12);
-        transform: scale(1.015);
+        transform: scale(1.010);
       }
       p {
         font-size: 0.850em;
         margin: 0.5em 2em;
       }
       a {
+        color: lighten($color: $primary, $amount: 20%);
         margin-right: 1em;
         margin-left: 1em;
+        transition: all 0.25s ease;
+        &:hover {
+          color: $secondary;
+        }
       }
       img {
         transition: all 0.5s ease;
