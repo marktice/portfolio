@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,6 +30,7 @@
   <meta name="twitter:card" content="/assets/img/profile_sf_square.jpg">
   <title>Mark Tice</title>
 </head>
+
 <body>
   <div id="page-wrapper">
     <header id="top"></header>
@@ -39,17 +41,29 @@
           <h1 class="animated fadeIn" id="title-header">Mark Tice</h1>
           <h4 class="dev-subtitle animated fadeInRight">Fullstack Developer</h4>
           <hr class="animated fadeIn">
-          <blockquote class="animated fadeInLeft"><p class="animated fadeInRight">"I dwell in possibility" - Emily Dickinson</p></blockquote>
+          <blockquote class="animated fadeInLeft">
+            <p class="animated fadeInRight">"I dwell in possibility" - Emily Dickinson</p>
+          </blockquote>
         </div>
-        <a href="#nav" id="down-arrow"><i class="fas fa-angle-down"></i></a>
+        <a href="#nav" id="down-arrow">
+          <i class="fas fa-angle-down"></i>
+        </a>
       </section>
 
       <nav role="navigation" id="nav">
-        <div id="logo"><a href="#top">Mark Tice</a></div>
+        <div id="logo">
+          <a href="#top">Mark Tice</a>
+        </div>
         <ul id="main-nav" class="nav-bar-sticky">
-          <li id="about-list"><a href="#about" id="about-link">About</a></li>
-          <li id="projects-list"><a href="#projects" id="projects-link">Projects</a></li>
-          <li id="contact-list"><a href="#contact" id="contact-link">Contact</a></li>
+          <li id="about-list">
+            <a href="#about" id="about-link">About</a>
+          </li>
+          <li id="projects-list">
+            <a href="#projects" id="projects-link">Projects</a>
+          </li>
+          <li id="contact-list">
+            <a href="#contact" id="contact-link">Contact</a>
+          </li>
         </ul>
       </nav>
 
@@ -61,11 +75,26 @@
           <div class="col" id="about-content">
             <h3>About</h3>
             <hr>
-            <p>Hi, I’m Mark and I’m a full-stack developer based in Melbourne, Australia. I am currently nearing the end of my studies at Coder Academy and am excited to begin my professional web development career at a forward thinking company with a positive culture.</p>
-            <p>Coming from a background in engineering I love problem solving and understanding the intricate nature of how things work.</p>
-            <p>I believe in facilitating positive change in the world and I am excited by the possibilities of how technology can be used to strengthen community and build a better future.</p>
-            <p>My favorite projects are those that require me to push beyond my boundaries and acquire new skills and knowledge in order to succeed.</p>
-            <p>When I'm not behind a computer screen I'm likely out hiking, sailing, or maybe just at home with a good book.</p>
+            <p>Hi there! Thanks for visiting my portfolio. I’m Mark and I’m a full-stack developer based in Melbourne, Australia.
+              I'm currently at the end of my studies at Coder Academy and am excited to begin my professional web development
+              career. </p>
+
+            <p>I'm
+              <strong>passionate</strong> about technology. I believe in facilitating positive change in the world and I am excited
+              by the possibilities of how technology can be used to strengthen community and build a better future.</p>
+
+            <p>Coming from a background in engineering I love problem solving and understanding the intricate nature of how
+              things work. My development skills are spread across both frontend and backend development, i enjoy understanding
+              all aspects of developing a full application to production.</p>
+
+            <p>My favorite projects are those that require me to push beyond my boundaries and to acquire new skills and knowledge
+              in order to succeed.
+              <aside>
+                <em>"Once you stop learning you start dying"</em> - Albert Einstein</aside>
+            </p>
+
+            <p>When I'm not behind a computer screen I'm likely playing or watching sport, playing a video or board game with
+              friends, learning to sail, or maybe just at home with a good book.</p>
           </div>
           <div class="col skills" id="about-skills">
             <h3>Industry Knowledge</h3>
@@ -75,11 +104,137 @@
             <br>
             <h3>Skills</h3>
             <hr>
-            <p>JavaScript, Vue, React, Node, Express, Redux, Webpack</p>
-            <p>Ruby, Ruby on Rails, Sinatra</p>
-            <p>SQL, PostgreSQL, MongoDB</p>
-            <p>JSON, GraphQL</p>
-            <p>HTML5, CSS3, Sass</p>
+
+            <div class="skills-public">
+              <div class="skills__group">
+                <h4>Fundamentals</h4>
+                <li>HTML5, CSS3, Sass</li>
+              </div>
+              <div class="skills__group">
+                <h4>JavaScript</h4>
+                <li>React, Vue, Redux, Webpack</li>
+                <li>Node, Express</li>
+                <li>Jest, Mocha, Supertest</li>
+              </div>
+              <div class="skills__group">
+                <h4>Ruby</h4>
+                <li>Rails, Sinatra</li>
+                <li>Rspec</li>
+              </div>
+              <div class="skills__group">
+                <h4>Databases</h4>
+                <li>SQL, PostgreSQL, MongoDB</li>
+              </div>
+              <div class="skills__group">
+                <h4>Other</h4>
+                <li>JSON, GraphQL</li>
+                <li>Bootstrap, Materialize, Pure</li>
+              </div>
+            </div>
+
+            <!-- <div class="skills-src">
+              <pre>
+<code>
+  const javaScriptSkills = {
+    frontEnd: [
+      react, 
+      vue, 
+      redux, 
+      webpack
+    ],
+    backEnd: [
+      node, 
+      express, 
+      mongoose
+    ],
+    testing: [
+      jest, 
+      mocha, 
+      supertest
+    ]
+  }
+</code>
+              </pre>
+              <pre>
+<code>
+  ruby_skills = {
+    frameworks: [
+      rails, 
+      sinatra
+    ],
+    testing: [
+      rspec, 
+      minitest
+    ]
+  }
+
+  rails = {
+    gems: {
+      production: [
+        devise, 
+        stripe, 
+        pundit, 
+        mailgun-ruby, 
+        dotenv-rails, 
+        shrine, 
+        image_processing, 
+        font-awesome-rails
+      ],
+      development: [
+        pry, 
+        rspec, 
+        factory_bot, 
+        capybara, 
+        shoulda-matchers, 
+        faker
+      ]
+    },
+    projects: {
+      boot_scoot: {
+        github: https://github.com/marktice/boot_scoot
+        website: https://bootscoot.herokuapp.com/
+      }
+    }
+  }
+</code>
+              </pre>
+            </div>
+
+            <pre>
+              <code>
+  projects: {
+    fullStack: {
+      bootScoot: {
+        tech: [rails, html5, sass],
+        github: https://github.com/marktice/boot_scoot,
+        website: https://bootscoot.herokuapp.com
+      },
+      justDoIt: {
+        tech: [node, react, html5, css3],
+        github: [
+          https://github.com/marktice/just-do-it, 
+          https://github.com/marktice/node-todo
+        ],
+        website: https://just-do-it.netlify.com/
+      }
+    },
+    frontEnd: {
+      portfolio: {
+        tech: [html5, CSS3, sass],
+        github: https://github.com/marktice/portfolio,
+        website: https://marktice.com
+      }
+    },
+    backEnd: {
+      nodeNotes: {
+        tech: [node],
+        githube: https://github.com/marktice/node-notes
+      }
+    }
+  }
+              </code>
+            </pre> -->
+
             <br>
             <h3>Tools</h3>
             <hr>
@@ -95,11 +250,20 @@
         <div class="projects-container">
           <div class="project">
             <h3>Boot Scoot</h3>
-            <img src="/assets/img/boot-scoot-480.gif" alt="Picture of Boot Scoot app">
+            <img src="/assets/img/boot-scoot__480.gif" alt="Picture of Boot Scoot app">
             <p>Hire your personal designated driver, an uber clone with a twist!</p>
-            <p>Made with: Ruby on Rails, Javascript, HTML, CSS/Sass</p>
+            <p>Tech: Ruby on Rails, Javascript, HTML, CSS/Sass</p>
             <a href="https://bootscoot.herokuapp.com/" target="_blank">Website</a>
             <a href="https://github.com/marktice/boot_scoot" target="_blank">Github</a>
+          </div>
+          <div class="project">
+            <h3>Just Do It</h3>
+            <img src="/assets/img/just-do-it__480.gif" alt="Picture of just do it app">
+            <p>Fullstack Todo application with flair and motivational gifs.</p>
+            <p>Tech: React, Node, Jest</p>
+            <a href="https://just-do-it.netlify.com/" target="_blank">Website</a>
+            <a href="https://github.com/marktice/just-do-it" target="_blank">Github-React</a>
+            <a href="https://github.com/marktice/node-todo" target="_blank">Github-Node</a>
           </div>
           <div class="project">
             <h3>Terminal App</h3>
@@ -111,11 +275,6 @@
             <img src="/assets/img/portfolio_img.jpg" alt="Picture of Personal Portfolio">
             <p>Personal Portfolio</p>
           </div>
-          <div class="project" id="project-countdown">
-            <h3>Countdown</h3>
-            <img src="/assets/img/countdown.jpg" alt="Picture of Countdown">
-            <p>Simple coutndown app with alarm</p>
-          </div>
         </div>
       </section>
 
@@ -126,11 +285,17 @@
             <hr>
             <p>Have a comment or inquiry?</p>
             <p>Send a brief message and i'll get back to you.</p>
-            <p>You can also reach me on <a href="https://www.linkedin.com/in/mark-tice/" id="linkdin" target="_blank">Linkedin</a> & <a href="https://github.com/marktice" id="github" target="_blank">Github</a>.</p>
+            <p>You can also reach me on
+              <a href="https://www.linkedin.com/in/mark-tice/" id="linkdin" target="_blank">Linkedin</a> &
+              <a href="https://github.com/marktice" id="github" target="_blank">Github</a>.</p>
             <p>Thanks for stopping by!</p>
           </div>
           <form class="col" name="contact" netlify-honeypot="bot-field" method="POST" netlify>
-            <p class="hidden"><label>Don’t fill this out if you're human: <input name="bot-field"></label></p>
+            <p class="hidden">
+              <label>Don’t fill this out if you're human:
+                <input name="bot-field">
+              </label>
+            </p>
             <input type="text" name="name" id="contact-name" placeholder="NAME" minlength="2" required>
             <input type="email" name="email" id="contact-email" placeholder="E-MAIL" minlength="5" required>
             <textarea name="message" id="contact-message" placeholder="MESSAGE" minlength="5" required></textarea>
@@ -139,18 +304,28 @@
         </div>
       </section>
     </main>
-    
+
     <footer>
       <div class="social-container">
-        <a href="https://www.linkedin.com/in/mark-tice/" id="linkdin" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/marktice" id="github" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://codepen.io/marktice/" id="codepen" target="_blank"><i class="fab fa-codepen"></i></a>  
+        <a href="https://www.linkedin.com/in/mark-tice/" id="linkdin" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/marktice" id="github" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://codepen.io/marktice/" id="codepen" target="_blank">
+          <i class="fab fa-codepen"></i>
+        </a>
       </div>
       <div class="copyright">
-        <i class="fas fa-cog fa-spin"></i><span> by Mark Tice 2018</span>
+        <i class="fas fa-cog fa-spin"></i>
+        <span> by Mark Tice 2018</span>
       </div>
-      <a id="up-button" href="#top"><i class="fas fa-arrow-up"></i></a>
+      <a id="up-button" href="#top">
+        <i class="fas fa-arrow-up"></i>
+      </a>
     </footer>
   </div>
 </body>
+
 </html>

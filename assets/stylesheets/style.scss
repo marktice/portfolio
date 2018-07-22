@@ -3,11 +3,15 @@
 
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
   overflow-y: scroll;
 }
 
-*, *:before, *:after { box-sizing: inherit; }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 * {
   margin: 0;
@@ -19,7 +23,12 @@ body {
   color: $grey;
 }
 
-h1, h2, h3, h4, h5, h6 { 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $header-font;
   font-weight: normal;
 }
@@ -37,7 +46,8 @@ nav {
   text-align: center;
   height: 50px;
   position: sticky;
-  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.16), 0px 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0px 2px 10px 0 rgba(0, 0, 0, 0.12);
   div#logo {
     margin-left: 25px;
     float: left;
@@ -53,7 +63,7 @@ nav {
         &:before {
           position: absolute;
           z-index: -1;
-          content: "Mark Tice";
+          content: 'Mark Tice';
           animation: glitchy 1s infinite;
         }
       }
@@ -81,10 +91,9 @@ nav {
           background-color: $primary;
         }
       }
-    }  
+    }
   }
 }
-
 
 section {
   min-height: 100vh;
@@ -94,7 +103,7 @@ section {
 
 section#landing {
   min-height: 100vh;
-  background-image: url("/assets/img/sf_sailing_bw.jpg");
+  background-image: url('/assets/img/sf_sailing_bw.jpg');
   background-position: top right;
   background-size: cover;
   // padding-top: 20vh;
@@ -114,9 +123,9 @@ section#landing {
           position: absolute;
           z-index: -1;
           animation: glitchy 1s ease 0.3s infinite;
-          content: "Mark Tice";
+          content: 'Mark Tice';
         }
-      } 
+      }
     }
     .dev-subtitle {
       color: $primary;
@@ -132,7 +141,7 @@ section#landing {
     blockquote {
       display: none; // currently removed
       border-left: 3px solid $white;
-      font-size: 0.75em;      
+      font-size: 0.75em;
       p {
         padding-top: 5px;
         padding-bottom: 5px;
@@ -149,7 +158,7 @@ section#landing {
     color: $primary;
     animation: beat 2s ease-in-out infinite;
     &:hover {
-      transition: all 0.5s ease;      
+      transition: all 0.5s ease;
       color: $secondary;
     }
   }
@@ -188,12 +197,27 @@ section#about {
     padding-bottom: 100px;
   }
   #about-content {
-    padding-top: 300px;    
+    padding-top: 300px;
   }
   #about-skills {
     padding-top: 100px;
     background-color: $grey;
     color: $white;
+  }
+  // pre code {
+  // font-family: monospace;
+  // font-size: 0.95rem;
+  // background-color: #eee;
+  // border: 1px solid #999;
+  // display: block;
+  // padding: 0px;
+  // }
+  .skills__group {
+    margin-top: 0.5rem;
+    line-height: 1.25rem;
+    h4 {
+      margin-bottom: 0.25rem;
+    }
   }
 }
 
@@ -224,14 +248,16 @@ section#projects {
       margin-top: 20px;
       color: $white;
       background-color: darken($color: $primary, $amount: 10%);
-      box-shadow: 0px 3px 8px 0 rgba(0, 0, 0, 0.16), 0px 4px 12px 0 rgba(0, 0, 0, 0.12);
+      box-shadow: 0px 3px 8px 0 rgba(0, 0, 0, 0.16),
+        0px 4px 12px 0 rgba(0, 0, 0, 0.12);
       transition: all 0.5s ease;
       &:hover {
-        box-shadow: 0px 6px 16px 0 rgba(0, 0, 0, 0.16), 0px 8px 24px 0 rgba(0, 0, 0, 0.12);
-        transform: scale(1.010);
+        box-shadow: 0px 6px 16px 0 rgba(0, 0, 0, 0.16),
+          0px 8px 24px 0 rgba(0, 0, 0, 0.12);
+        transform: scale(1.01);
       }
       p {
-        font-size: 0.850em;
+        font-size: 0.85em;
         margin: 0.5em 2em;
       }
       a {
@@ -244,10 +270,10 @@ section#projects {
         }
       }
       img {
+        width: 90%;
         transition: all 0.5s ease;
         margin-top: 1em;
         margin-bottom: 0.5em;
-        width: 90%;
         border-radius: 3px;
       }
     }
@@ -265,9 +291,15 @@ section#contact {
     display: flex;
     flex-flow: row wrap;
   }
-  p {margin-bottom: 0.75em;}
-  p:last-of-type {margin-bottom: 0;}
-  hr {margin-bottom: 1em;}
+  p {
+    margin-bottom: 0.75em;
+  }
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+  hr {
+    margin-bottom: 1em;
+  }
   #contact-content {
     padding-right: 10%;
     a {
@@ -285,14 +317,16 @@ section#contact {
     padding-bottom: 1.5em;
     display: flex;
     flex-direction: column;
-    input, textarea {
+    input,
+    textarea {
       font-size: 1em;
       font-family: $content-font;
       padding: 1em;
       transition: all 0.4s ease-in-out;
       margin-bottom: 3px;
       border: 1px solid $grey;
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         background-color: $white;
         color: $grey;
         outline: none;
@@ -312,7 +346,9 @@ section#contact {
         background-color: $primary;
       }
     }
-    .hidden {display: none;} // form honeypot (bot catcher)
+    .hidden {
+      display: none;
+    } // form honeypot (bot catcher)
   }
 }
 
@@ -321,8 +357,8 @@ footer {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
-    ". social social up"
-    ". copyr copyr up"; 
+    '. social social up'
+    '. copyr copyr up';
   justify-items: center;
   align-items: center;
   background-color: $grey;
@@ -337,7 +373,7 @@ footer {
     i {
       color: $white;
       font-size: 1.5em;
-      transition: all 0.4s ease;    
+      transition: all 0.4s ease;
       &:visited {
         color: $white;
       }
@@ -356,12 +392,12 @@ footer {
   a#up-button {
     grid-area: up;
     i {
-      transition: all 0.4s ease;      
+      transition: all 0.4s ease;
       color: $white;
       font-size: 2.25em;
       &:hover {
         color: $primary;
-        transform: scale(1.15);        
+        transform: scale(1.15);
       }
     }
   }
@@ -394,9 +430,15 @@ footer {
 // Split into columns
 @media only screen and (min-width: 768px) {
   #landing {
-    #title-header {font-size: 5em !important}
-    .dev-subtitle {font-size: 2em !important}
-    blockquote {font-size: 1em;}
+    #title-header {
+      font-size: 5em !important;
+    }
+    .dev-subtitle {
+      font-size: 2em !important;
+    }
+    blockquote {
+      font-size: 1em;
+    }
     #down-arrow {
       font-size: initial;
     }

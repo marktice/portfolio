@@ -1,12 +1,12 @@
 @keyframes beat {
   10% {
-    transform: scale(.87);
+    transform: scale(0.87);
   }
   17% {
-    transform: scale(.97);
+    transform: scale(0.97);
   }
   33% {
-    transform: scale(.82);
+    transform: scale(0.82);
   }
   45% {
     transform: scale(1);
@@ -15,39 +15,39 @@
 
 @keyframes glitchy {
   0% {
-    color: #39848D;
+    color: #39848d;
     transform: translate(-4px, 4px);
   }
   12% {
-    color: #9D1840;
+    color: #9d1840;
     transform: translate(4px, 4px);
   }
   25% {
-    color: #39848D;
+    color: #39848d;
     transform: translate(-4px, -4px);
   }
   37% {
-    color: #9D1840;
+    color: #9d1840;
     transform: translate(4px, -4px);
   }
   50% {
-    color: #39848D;
+    color: #39848d;
     transform: translate(4px, 4px);
   }
   62% {
-    color: #9D1840;
+    color: #9d1840;
     transform: translate(-4px, 4px);
   }
   75% {
-    color: #39848D;
+    color: #39848d;
     transform: translate(4px, -4px);
   }
   87% {
-    color: #9D1840;
+    color: #9d1840;
     transform: translate(-4px, -4px);
   }
   100% {
-    color: #39848D;
+    color: #39848d;
     transform: translate(-4px, 4px);
   }
 }
